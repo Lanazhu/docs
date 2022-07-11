@@ -1,0 +1,273 @@
+{
+	"info": {
+		"_postman_id": "a82289cb-2441-4a3b-a024-79c648d43bd0",
+		"name": "TheAtlas Sandbox",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "search",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {}
+			},
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "x-atlas-client-id",
+						"value": "lhkbh94750",
+						"type": "default"
+					},
+					{
+						"key": "x-atlas-client-secret",
+						"value": "test",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"cid\": \"lfalu52992\",\r\n    \"tripType\": \"1\",\r\n    \"adultNum\": 1,\r\n    \"childNum\": 0,\r\n    \"infantNum\": 0,\r\n    \"fromCity\": \"MNL\",\r\n    \"toCity\": \"CEB\",\r\n    \"fromDate\": \"20220204\",\r\n    \"retDate\": null\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://sandbox.atlaslovestravel.com/search.do",
+					"protocol": "https",
+					"host": [
+						"sandbox",
+						"atlaslovestravel",
+						"com"
+					],
+					"path": [
+						"search.do"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "verify",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "x-atlas-client-id",
+						"value": "lhkbh94750",
+						"type": "default"
+					},
+					{
+						"key": "x-atlas-client-secret",
+						"value": "test",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"cid\": \"lfalu52992\",\r\n    \"routingIdentifier\": \"z4eymaHrwKUTSMWRHlhxhAMDhwUTz1Ty46VwnmDdMe8UDOZ2l21Da3MwImespd1SPvhBZoblIXMwyn9MTuz2/sumPDwY94sYR7e0VPq8abGDxU0WaZpKQFO3YIu1NKV243XNQqK9NrRtNueiC3CNV+0YIpcfWADucgWZew6dcC2RYmzjBb9iMMS6kxevRfdBz4oINVkHKOBsYqE30j6v4AGYCSuSEcf0h7h+mqbXXND1GEmT5TthTQ\\u003d\\u003d\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://sandbox.atlaslovestravel.com/verify.do",
+					"protocol": "https",
+					"host": [
+						"sandbox",
+						"atlaslovestravel",
+						"com"
+					],
+					"path": [
+						"verify.do"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "order",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {}
+			},
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"cid\": \"lfalu52992\",\n    \"sessionId\": \"abb462fb-cbaa-4e48-bd3f-2cbcbe432ac3\",\n    \"passengers\": [\n        {\n            \"name\": \"SONG/YUN\",\n            \"passengerType\": 0,\n            \"birthday\": \"19921027\",\n            \"gender\": \"M\",\n            \"cardNum\": \"EC50717400\",\n            \"cardType\": \"PP\",\n            \"cardIssuePlace\": \"CN\",\n            \"cardExpired\": \"20280308\",\n            \"nationality\": \"CN\",\n            \"ancillaries\":[ \n                { \n                \"productCode\":\"BAG_IW_1P_15KG\", \n                \"segmentIndex\":1 \n                } \n            ]\n        },\n        {\n            \"name\": \"YAO/SAHA\",\n            \"passengerType\": 1,\n            \"birthday\": \"20140103\",\n            \"gender\": \"M\",\n            \"cardNum\": \"EJ19771700\",\n            \"cardType\": \"PP\",\n            \"cardIssuePlace\": \"CN\",\n            \"cardExpired\": \"20300311\",\n            \"nationality\": \"CN\",\n            \"ancillaries\": []\n        }\n    ],\n    \"contact\": {\n        \"name\": \"Way\",\n        \"address\": null,\n        \"postcode\": null,\n        \"email\": \"qyjhb2@163.com\",\n        \"mobile\": \"13580579231\"\n    },\n    \"baggagePiece\": 0,\n    \"baggageWeight\": 0,\n    \"passengerBaggages\": null,\n    \"requestSource\": \"\"\n}"
+				},
+				"url": {
+					"raw": "https://sandbox.atlaslovestravel.com/order.do",
+					"protocol": "https",
+					"host": [
+						"sandbox",
+						"atlaslovestravel",
+						"com"
+					],
+					"path": [
+						"order.do"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "pay",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "text/plain",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"cid\": \"lfalu52992\",\r\n    \"orderNo\": \"TNWXT20220127154309999\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://sp.theatlas.top:18081/issueTicket.do",
+					"protocol": "https",
+					"host": [
+						"sp",
+						"theatlas",
+						"top"
+					],
+					"port": "18081",
+					"path": [
+						"issueTicket.do"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "queryOrderDetails",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "text/plain",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"cid\": \"lfalu52992\",\r\n    \"orderNo\": \"TNWXT20220127154309999\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://sandbox.atlaslovestravel.com/queryOrderDetails.do",
+					"protocol": "https",
+					"host": [
+						"sandbox",
+						"atlaslovestravel",
+						"com"
+					],
+					"path": [
+						"queryOrderDetails.do"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Refund Quotation",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "text/plain",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"cid\": \"lfalu52992\",\r\n    \"orderNo\": \"OHCOU20220127001613523\",\r\n    \"ticketList\": [\r\n        {\r\n            \"lastName\": \"YAO\",\r\n            \"firstName\": \"SAHA\",\r\n            \"ticketNo\": \"S48870\",\r\n            \"depDate\": \"20220204\",\r\n            \"flightNo\": \"RS932\",\r\n            \"depAirport\": \"CJU\",\r\n            \"arrAirport\": \"GMP\"\r\n        }\r\n    ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://sandbox.atlaslovestravel.com/v1/getTicketRefundFee.do",
+					"protocol": "https",
+					"host": [
+						"sandbox",
+						"atlaslovestravel",
+						"com"
+					],
+					"path": [
+						"v1",
+						"getTicketRefundFee.do"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Refund",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "text/plain",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"cid\": \"lfalu52992\",\r\n    \"orderNo\": \"ANYPC20220126213623394\",\r\n    \"ticketList\": [\r\n        {\r\n            \"lastName\": \"YAO\",\r\n            \"firstName\": \"SAHA\",\r\n            \"ticketNo\": \"S87275\",\r\n            \"depDate\": \"20220204\",\r\n            \"flightNo\": \"RS932\",\r\n            \"depAirport\": \"CJU\",\r\n            \"arrAirport\": \"GMP\",\r\n            \"subOrderNumber\":\"ANYPC20220126213623394_1\"\r\n        }\r\n    ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://sandbox.atlaslovestravel.com/v1/saveTicketRefund.do",
+					"protocol": "https",
+					"host": [
+						"sandbox",
+						"atlaslovestravel",
+						"com"
+					],
+					"path": [
+						"v1",
+						"saveTicketRefund.do"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
