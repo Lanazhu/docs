@@ -1,10 +1,10 @@
 # Refund Quotation
 
-## Dependency
+### Dependency
 
 No preceding function needs to be carried out.
 
-## Endpoint
+### Endpoint
 
 [https://sandbox.atlaslovestravel.com/RefundQuotation.do](https://sandbox.atlaslovestravel.com/getTicketRefundFee.do)
 
@@ -130,8 +130,8 @@ No preceding function needs to be carried out.
     Refund offer id for this quotation which can be used for the coming refund call.
 {% endtab %}
 
-{% tab title="Sample" %}
-```json
+{% tab title="Samples" %}
+```
 {
     "status": 0,
     "msg": "success",
@@ -148,5 +148,7 @@ No preceding function needs to be carried out.
     "refundOfferId": "7961ab5b202642628e9595498ffea083"   
 }
 ```
+
+
 {% endtab %}
 {% endtabs %}

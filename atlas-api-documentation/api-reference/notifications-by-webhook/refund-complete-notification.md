@@ -2,7 +2,7 @@
 
 ### Refund Complete Notification Webhook
 
-Once an event of "<mark style="color:green;">order.refundComplete</mark>" is received on the server, it can be processed and action taken as required.
+When a ticket or ancillary service is cancelled, you will receive the `order.refundComplete` notification on your server.
 
 EndPoint ： The URL you configured to receive notifications&#x20;
 
@@ -45,7 +45,7 @@ Method : Post
 {% endtab %}
 
 {% tab title="Samples" %}
-```json
+```
 {
     "cid": "XXXXXXXX",
     "orderNo": "ZNMKU20220119160129691",
@@ -61,5 +61,7 @@ Method : Post
     "refundStatus": 2
 }
 ```
+
+
 {% endtab %}
 {% endtabs %}

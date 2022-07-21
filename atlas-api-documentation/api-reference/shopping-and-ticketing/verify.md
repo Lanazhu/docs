@@ -1,17 +1,19 @@
 # Verify
 
-## Dependency
+### Dependency
 
-Search function should be called in prior to this call.
+The `search` function should be called prior to this call.
 
-## Endpoint
+### Endpoint
 
 [https://sandbox.atlaslovestravel.com/verify.do](https://sandbox.atlaslovestravel.com/verify.do)
 
-## Request
+### Request
 
 {% tabs %}
 {% tab title="Schema" %}
+
+
 *   #### cid                                  <mark style="color:blue;">string</mark>                                                                                                 <mark style="color:green;">Required</mark>
 
     Identifier of client and user.
@@ -28,14 +30,18 @@ Search function should be called in prior to this call.
 {% endtab %}
 
 {% tab title="Samples" %}
-```json
+```
 {
     "cid": "XXXXXXXX",
     "routingIdentifier": "Nvm0BG9VCGJRUPzvRCF2hU1okLJgXsVU46VwnmDdMe/JgpxanH/Xja3hYaj9X/EHLiR7QMsFKwl97AMIwqGNDbcG9kV3bXzylDL2dNM3c07PTcQ67WyTJvK9ITR1HmHC2t2K1gUJztkSI4hVwhMjOGZUlo8qqzhJ8N3Bzta2M87ijqfQHCXkoLAseTdGienIy33IOIIHB6aknLdpZrvz8tCOBxWuNSYc0RRhtNsZ2n31GEmT5TthTQ\u003d\u003d"
 }
 ```
+
+
 {% endtab %}
 {% endtabs %}
+
+
 
 ## Response
 
@@ -63,39 +69,15 @@ Search function should be called in prior to this call.
     Remaining seats for the fare;
 
     Please refer this element and prevent the end-users to choose more passengers than seat count.
-*   #### routing                    Object<[RouteElement](search.md#2.-route-element-schema)> <mark style="color:blue;"></mark>                                                           &#x20;
+*   #### routing                    Object<[RouteElement](broken-reference)> <mark style="color:blue;"></mark>                                                           &#x20;
 
-    Route and fare details. The structure is also Routing Elements, same as search response.
-*   **bookingRequirement**                    **Object**<[<mark style="color:blue;">**Booking**</mark>](search.md#2.-route-element-schema)<mark style="color:blue;">**Requirement**</mark>> <mark style="color:blue;"></mark>                                                           &#x20;
-
-    The description for booking info schema.
-
-    * [<mark style="color:blue;">**Booking**</mark>](search.md#2.-route-element-schema)<mark style="color:blue;">**Requirement**</mark>
-      * #### <mark style="color:blue;">passenger</mark>                  Object<[PassengerRequirement](search.md#2.-route-element-schema)>&#x20;
-        *   **passengerType        Object<**<mark style="color:blue;">**ReqiurementSchema**</mark>**>**
-
-            *   **type**                   <mark style="color:blue;">**string**</mark>
-
-                The data type of this element
-            * **required**             <mark style="color:blue;">**boolean**</mark>
-
-            &#x20;        <mark style="color:blue;">****</mark>         Identify if this element is required during booking
-
-            * **decription           **<mark style="color:blue;">**string**</mark>
-
-            &#x20;      The remark of this element for this booking
-        * **name                         Object<**<mark style="color:blue;">**ReqiurementSchema**</mark>**>**
-        * **gender                      Object<**<mark style="color:blue;">**ReqiurementSchema**</mark>**>**
-        * **birthday                    Object<**<mark style="color:blue;">**ReqiurementSchema**</mark>**>**
-        * **nationality                 Object<**<mark style="color:blue;">**ReqiurementSchema**</mark>**>**
-        * **cardType                   Object<**<mark style="color:blue;">**ReqiurementSchema**</mark>**>**
-        * **cardNum                   Object<**<mark style="color:blue;">**ReqiurementSchema**</mark>**>**
-        * **cardExpired              Object<**<mark style="color:blue;">**ReqiurementSchema**</mark>**>**
-        * **cardIssuePlace         Object<**<mark style="color:blue;">**ReqiurementSchema**</mark>**>**
+    Route and fare details. The structure is also Routing Elements, same as search response
 {% endtab %}
 
 {% tab title="Samples" %}
-```json
+```
+{
+    "status": 0,
     "msg": "success",
     "sessionId": "6e22869e-be61-4f78-b618-6b0319877db9",
     "maxSeats": 4,
@@ -222,5 +204,7 @@ Search function should be called in prior to this call.
         }
 }
 ```
+
+
 {% endtab %}
 {% endtabs %}

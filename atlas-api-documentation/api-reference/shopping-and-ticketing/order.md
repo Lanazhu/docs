@@ -1,10 +1,10 @@
 # Order
 
-## Dependency
+### Dependency
 
-Verify function should be called in prior to this call.
+`Verify` function should be called in prior to this call.
 
-## Endpoint
+### Endpoint
 
 [https://sandbox.atlaslovestravel.com/order.do](https://sandbox.atlaslovestravel.com/order.do)
 
@@ -111,7 +111,7 @@ Verify function should be called in prior to this call.
 {% endtab %}
 
 {% tab title="Samples" %}
-```json
+```
 {
     "cid": "XXXXXXXX",
     "sessionId": "43c3c07e-2b05-4fc9-8832-29a71075a097",
@@ -156,8 +156,12 @@ Verify function should be called in prior to this call.
     "requestSource": ""
 }
 ```
+
+
 {% endtab %}
 {% endtabs %}
+
+
 
 ## Response
 
@@ -181,13 +185,13 @@ Verify function should be called in prior to this call.
     Order number
 *   #### totalPrice                               <mark style="color:blue;">decimal</mark>                                                                                  &#x20;
 
-    Total fare of this order in the currency Atlas settled with you.
+    Total fare of this order in the currency TheAtlas settled with you.
 *   #### totalTransactionFee         <mark style="color:blue;">decimal</mark>                                                                                  &#x20;
 
-    Total technical fees for this order in the currency Atlas settled with you.
+    Total technical fees for this order in the currency TheAtlas settled with you.
 *   #### currency                                 <mark style="color:blue;">string</mark>                                                                                     &#x20;
 
-    The currency Atlas settled with you.
+    The currency TheAtlas settled with you.
 *   #### vendorTotalPrice                <mark style="color:blue;">decimal</mark>                                                                                 &#x20;
 
     Total fare of this order in the vendor's currency, reference for you to generate the specific credit card.
@@ -265,13 +269,13 @@ Verify function should be called in prior to this call.
             *   #### offerId                                           <mark style="color:blue;">string</mark>                                                      &#x20;
 
                 unique identifier for this ancillary's offer.
-*   #### routing                                     Object<[RouteElement](search.md#2.-route-element-schema)> <mark style="color:blue;"></mark>                                                   &#x20;
+*   #### routing                                     Object<[RouteElement](broken-reference)> <mark style="color:blue;"></mark>                                                   &#x20;
 
     Route and fare details. The structure is also Routing Elements, same as search response
 {% endtab %}
 
 {% tab title="Samples" %}
-```json
+```
 {
     "status":0,
     "msg":"success",
@@ -409,5 +413,7 @@ Verify function should be called in prior to this call.
     }
 }j
 ```
+
+
 {% endtab %}
 {% endtabs %}

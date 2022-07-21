@@ -1,10 +1,10 @@
 # Payment
 
-## Dependency
+### Dependency
 
-Order function should be called in prior to this call.
+`Order` function should be called in prior to this call.
 
-## Endpoint
+### Endpoint
 
 [https://sandbox.atlaslovestravel.com/pay.do](https://sandbox.atlaslovestravel.com/pay.do)
 
@@ -111,11 +111,13 @@ Order function should be called in prior to this call.
 {% endtab %}
 
 {% tab title="Samples" %}
-```json
+```
 {
     "status": 0,
     "msg": "success"
 }
 ```
+
+
 {% endtab %}
 {% endtabs %}

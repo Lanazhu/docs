@@ -2,7 +2,7 @@
 
 ### Addon Complete Notification Webhook
 
-Once an event of "<mark style="color:green;">order.addonComplete</mark>" is received on the server, it can be processed and action taken as required.
+When your customer books an ancillary service post booking their ticket, you will receive the `order.addonComplete` notification.
 
 EndPoint ： The URL you configured to receive notifications&#x20;
 
@@ -26,13 +26,13 @@ Method : Post
   *   #### orderStatus                                        <mark style="color:blue;">int</mark>                                                                            &#x20;
 
       orderStatus=2 means ticketed
-  *   #### paxTicketInfos                                  Array<[PAXTicketInfo](../shopping-and-ticketing/order.md#2.-paxticketinfo-schema)>                                   <mark style="color:blue;"></mark>                                  &#x20;
+  *   #### paxTicketInfos                                  Array<[PAXTicketInfo](broken-reference)>                                   <mark style="color:blue;"></mark>                                  &#x20;
 
-      Passengers' ticket information, the same format as the PAXTicketInfo in order response or retrive booking response, click [**here**](../shopping-and-ticketing/order.md#2.-paxticketinfo-schema) **** to check the schema
+      Passengers' ticket information, the same format as the PAXTicketInfo in order response or retrive booking response, click [**here**](broken-reference) **** to check the schema
 {% endtab %}
 
 {% tab title="Sample" %}
-```json
+```
 {
     "cid": "rggat40831",
     "type": "order.addonComplete",
@@ -69,5 +69,7 @@ Method : Post
     }  
 }
 ```
+
+
 {% endtab %}
 {% endtabs %}

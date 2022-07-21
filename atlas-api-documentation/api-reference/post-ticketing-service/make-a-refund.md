@@ -1,10 +1,10 @@
 # Make a Refund
 
-## Dependency
+### Dependency
 
 Refund quotation function should be called in prior of this call
 
-## Endpoint
+### Endpoint
 
 [https://sandbox.atlaslovestravel.com/refund.do](https://sandbox.atlaslovestravel.com/refund.do)
 
@@ -90,8 +90,8 @@ Refund quotation function should be called in prior of this call
     2:  Completed(Means the money back or the voucher forwarded)
 {% endtab %}
 
-{% tab title="Sample" %}
-```json
+{% tab title="Samples" %}
+```
 {
     "status": 0,
     "msg": "success"
@@ -109,5 +109,7 @@ Refund quotation function should be called in prior of this call
     "isRefundable": true   
 }
 ```
+
+
 {% endtab %}
 {% endtabs %}

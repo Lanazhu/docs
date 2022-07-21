@@ -1,10 +1,10 @@
 # Add Ancillaries
 
-## Dependency
+### Dependency
 
 Offer ancillary list function should be called in prior of this call
 
-## Endpoint
+### Endpoint
 
 [https://sandbox.atlaslovestravel.com/orderAncillary.do](https://sandbox.atlaslovestravel.com/orderAncillary.do)
 
@@ -247,5 +247,5 @@ Offer ancillary list function should be called in prior of this call
 {% endtabs %}
 
 {% hint style="info" %}
-If you want to pay for the add-ancillary order, please call the [pay](../shopping-and-ticketing/payment.md) function as same as the ticketing orders.
+If you want to pay for the add-ancillary order, please call the [pay](broken-reference) function as same as the ticketing orders.
 {% endhint %}

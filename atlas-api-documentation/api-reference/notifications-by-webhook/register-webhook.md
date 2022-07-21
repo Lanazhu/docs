@@ -1,17 +1,5 @@
 # Register Webhook
 
-## Overview
-
-In this guide, you'll learn how to set up and handle webhooks in your integration.&#x20;
-
-After you've set up webhooks, you'll receive notifications about events that happen in your account - for example, when an airline has a schedule change affecting one of your orders.&#x20;
-
-We'll send these events to your server, and then you can process them and take action automatically - for example updating your database or emailing a customer.
-
-## End Point
-
-[https://sandbox.atlaslovestravel.com/updateWebhookURL.do](https://sandbox.atlaslovestravel.com/updateWebhookURL.do)
-
 ## Request
 
 {% tabs %}
@@ -49,14 +37,13 @@ We'll send these events to your server, and then you can process them and take a
 {% endtab %}
 
 {% tab title="Sample" %}
-```json
+```
 {
     "status": 0,
     "msg": "success"
 }
 ```
+
+
 {% endtab %}
 {% endtabs %}
-
-
-

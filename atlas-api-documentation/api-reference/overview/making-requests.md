@@ -1,34 +1,34 @@
 # Making requests
 
-## Making requests <a href="#overview" id="overview"></a>
+### Making requests &#x20;
 
-Here are the building blocks to set up your first request.
+Let’s help you with the building blocks to set up your first request.&#x20;
 
-### Authentication <a href="#authentication" id="authentication"></a>
+#### Authentication
 
-Atlas will provide you <mark style="color:green;">x-atlas-client-id</mark> and <mark style="color:green;">x-atlas-client-secret</mark> before you start development.
-
-Send them in the request header.
+You will receive `x-atlas-client-id` and `x-atlas-client-secret` from Atlas before you start development. Whenever you send a request, the header must include the authentication keys. Any request that doesn't include an API key will return an error.&#x20;
 
 ```
-x-atlas-client-id ： <Your clientid>
-x-atlas-client-secret : <Your client secretid>
+x-atlas-client-id: <Your clientid> 
+x-atlas-client-secret: <Your client secretid> 
 ```
 
-### MIME types <a href="#mime-types" id="mime-types"></a>
+#### MIME types
 
-All request bodies sent to the API should be in JSON format. A `Content-Type` header is required whenever you're sending a request body (i.e. for `POST` and `PUT` requests):
+All requests sent to the Atlas API should be in JSON format. When sending a request body, you must include `Content-Type` in the header (i.e. for `POST` and `PUT` requests):&#x20;
 
 ```
 Content-Type: application/json
 ```
 
-### Compression <a href="#compression" id="compression"></a>
+#### Compression
 
-We recommend enabling compression for responses returned by the API, since they can be very large. To enable compression, send an `Accept-Encoding` header:
+API request responses can be very large, so we recommend enabling compression for responses returned by the API. Include `Accept-Encoding` in the header to enable compression:&#x20;
 
 ```
-Accept-Encoding: gzip
+Accept-Encoding: gzip 
 ```
 
-You'll need to configure your HTTP client to decompress responses. Most clients will have this functionality built-in.
+Most HTTP clients will decompress responses. If your client doesn’t have this functionality built in, you'll need to configure it.
+
+&#x20;

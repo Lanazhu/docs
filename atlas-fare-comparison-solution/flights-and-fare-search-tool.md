@@ -1,107 +1,92 @@
-# Flights & Fare Search Tool
+---
+cover: ../.gitbook/assets/ATL_002_Gitbook-headers_Atlas_FlightSearchTool.png
+coverY: 0
+---
 
-## Overview
+# Flights and Fare Search Tool
 
-You can search and download flights and fare data. These rows of data can be compared with your own data at a time.
+### Overview
 
-The workflow to achieve this is as below:
+Atlas allows you to search and download flights and fare data. These rows of data can be compared with your own data at the same time. This is a quick and easy three-step process:
 
-![](<../.gitbook/assets/image (25).png>)
+![](<../.gitbook/assets/ATL\_002\_Flights & Fare Search Tool.png>)
 
 {% hint style="info" %}
-Atlas quotation consists of four parts as mentioned below :
+The Atlas quotation consists of the following four parameters:
 
-* <mark style="color:blue;">Currency</mark>   &#x20;
+**Currency:**&#x20;
 
-&#x20;      Configured according to your demand during your application for fare comparison.
+* Atlas will configure currency to the one requested in your application.
 
-* <mark style="color:blue;">FarePrice</mark> &#x20;
+**FarePrice**:&#x20;
 
-&#x20;     The same as airline official price converted to your selected currency using the market FX rate.
+* The fare you see is the same as the airline official price converted to your preferred currency using the market exchange rate.
 
-* <mark style="color:blue;">Tax</mark>           &#x20;
+**Tax:**&#x20;
 
-&#x20;      The same as airline official tax converted to your selected currency using the market FX rate.
+* The tax is same as the airline official tax converted to your preferred currency using the market exchange rate.
 
-* <mark style="color:blue;">Booking Fee (Technical Service fee)</mark>  &#x20;
+**Booking Fee (Technical Service fee):**
 
-&#x20;      $0 in comparison results. For real transaction, the value will be set according to the contractual agreement between Atlas and your company
+* Please note the technical service fee will show as $0 for you. The transaction fee will be set as per the contractual agreement between Atlas and your company.
 {% endhint %}
 
-## 1-Submit Application for Comparison
+## **1.** Submit application to access our search and compare tool
 
-The search tool application should be submitted to the Atlas account manager with 3 sets of information as mentioned below. The flights & fare search tool credentials will be created and shared by your account manager.&#x20;
+Request access to the search tool from your Atlas Account Manager and provide the following three parameters:
 
-1\) <mark style="color:blue;">Company name</mark>&#x20;
+* Company name
+* Email Address
+* Fare Quote Currency
 
-2\) <mark style="color:blue;">Email Address</mark>&#x20;
+## 2. Get Atlas flights and fare search credentials
 
-3\) <mark style="color:blue;">Fare Quote Currency</mark>
+The flights and fare search tool credentials will be created and the following with be shared by your account manager:
 
-## 2-Get Atlas Flights & Fare Search Credential
+* URL of Flights and Fare Search Tool Portal
+* Private user id
+* Default password
 
-You will get 3 sets of information below:
+## 3. Enter search parameters and download a batch of results for comparison
 
-1\) URL of Flights & Fare Search Tool Portal&#x20;
+You can filter using the following search parameters:
 
-2\) Private user id
+* One-way or Round-trip
+* Departure Date
+* Return Date
+* Departure Country and Arrival Country
+* Departure City and Arrival City
+* Airline (IATA Code)
+* Fare Quotation Currency (as requested)
 
-3\) Default password
-
-
-
-## 3-Use our search tool to download a batch of content for comparison
-
-#### Search filters are bellow:
-
-1\) One-way or Round-trip
-
-2\) Departure Date
-
-3\) Return Date
-
-4\) Departure Country & Arrival Country
-
-5\) Departure City & Arrival City
-
-6\) Airline : IATA Airline Code
-
-7\) Fare Quotation Currency : Configured according to your demand during your application for fare comparison.
-
-#### Flights & fare content information are bellow:
-
-If it is a round trip, you will get outbound and inbound flights and fare bellow.
+If it is a round trip, you will get outbound and inbound flights and fare comparison. The search request will return a lot of parameters:
 
 
 
-| Column                        | Description                                                                                                                                  |
-| ----------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------- |
-| Flight No                     | If it is a transfer trip, the flight number of each segment is displayed one after another, and each flight number is separated by a comma   |
-| Airline                       | If it is a connecting trip, the airline for each segment is displayed one after another, and each value is separated by a comma              |
-| Dep Time                      | Format as yyyy/MM/dd HH:m                                                                                                                    |
-| Arr Time                      | Format as yyyy/MM/dd HH:m                                                                                                                    |
-| Stopover (Transfer) / Nonstop | Transfer / Nonstop                                                                                                                           |
-| Total Flight Hours            | HHh MMm                                                                                                                                      |
-| Dep Airport                   | 3 letter IATA airport code                                                                                                                   |
-| Arr Airport                   | 3 letter IATA airport code                                                                                                                   |
-| Dep City                      | 3 letter IATA city code                                                                                                                      |
-| Arr City                      | 3 letter IATA city code                                                                                                                      |
-| Cabin Class                   | Economy Class / Business Class / First Class                                                                                                 |
-| Passenger Type                | <p>ADT: Ordinary adult price<br>STU: International student price<br>SEA: Seaman's price</p>                                                  |
-| Fare Price                    | The net fare as provided by the airline                                                                                                      |
-| Tax Fee                       | The total tax as provided by the airline                                                                                                     |
-| Booking Fee                   | $0 in comparison results. For real transaction, the value will be set according to the contractual agreement between Atlas and your company. |
-| Total Fare(Including TAX)     | Fare Price + Tax                                                                                                                             |
-| Fare Quote Currency           | As per the settlement currency of your company                                                                                               |
-| Fare Quote Time               | The time at which the fare quote response has been received from the Atlas Platform                                                          |
+| Column                        | Description                                                                                                                                              |
+| ----------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Flight No                     | In case of multiple connecting flights, the flight number of each segment is displayed one after another and each flight number is separated by a comma. |
+| Airline                       | In case of multiple airlines, the airline code for each segment is displayed one after another, separated by a comma.                                    |
+| Dep Time                      | Format as yyyy/MM/dd HH:m                                                                                                                                |
+| Arr Time                      | Format as yyyy/MM/dd HH:m                                                                                                                                |
+| Stopover (Transfer) / Nonstop | Transfer / Nonstop                                                                                                                                       |
+| Total Flight Hours            | HH:MM                                                                                                                                                    |
+| Dep Airport                   | IATA airport code                                                                                                                                        |
+| Arr Airport                   | IATA airport code                                                                                                                                        |
+| Dep City                      | IATA city code                                                                                                                                           |
+| Arr City                      | IATA city code                                                                                                                                           |
+| Cabin Class                   | Economy Class / Business Class / First Class                                                                                                             |
+| Passenger Type                | <p>ADT: Ordinary adult price<br>STU: International student price<br>SEA: Seaman's price</p>                                                              |
+| Fare Price                    | The net fare as provided by the airline                                                                                                                  |
+| Tax Fee                       | The total tax as charged by the airline                                                                                                                  |
+| Booking Fee                   | The technical service fee will show as $0 for you. The transaction fee will be set as per the contractual agreement between Atlas and your company.      |
+| Total Fare(Including TAX)     | Fare Price + Tax                                                                                                                                         |
+| Fare Quote Currency           | As per the settlement currency of your company                                                                                                           |
+| Fare Quote Time               | The time at which the fare quote response was sent by Atlas                                                                                              |
 
 ## Contact us
 
-For applying flight & fare search tool, please contact your account manager.
-
-For any questions or problems about using the search tool, please contact us on b2b\_product@atlaslovestravel.com
-
-\
+To apply for your **Flight and Fare Search Tool** credentials, please contact your account manager. For any queries or issues regarding the search tool, please contact us on b2b\_product@atlaslovestravel.com.
 
 
-\
+

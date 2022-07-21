@@ -1,55 +1,68 @@
+---
+description: Create an order request to search for flights.
+---
+
 # Search
 
-## Dependency
+### Dependency&#x20;
 
-No preceding function needs to be carried out.
+No preceding function needs to be called before `Search`.&#x20;
 
-## Endpoint
+### Endpoint&#x20;
 
-[https://sandbox.atlaslovestravel.com/search.do](https://sandbox.atlaslovestravel.com/search.do)
+[https://sandbox.atlaslovestravel.com/search.do ](https://sandbox.atlaslovestravel.com/search.do)
 
-## Request
+### Request&#x20;
 
 {% tabs %}
 {% tab title="Schema" %}
-*   #### cid                 <mark style="color:blue;">string</mark>                                                                                                                  <mark style="color:green;">Required</mark>
+#### `cid`                 <mark style="color:blue;">string</mark>                                                                                                                  <mark style="color:green;">Required</mark>
 
-    Identifier of client and user.
-*   #### tripType      <mark style="color:blue;">string</mark>                                                                                                                  <mark style="color:green;">Required</mark>
+Identifier of client and user.
 
-    1: Oneway
+#### `tripType`      <mark style="color:blue;">string</mark>                                                                                                                  <mark style="color:green;">Required</mark>
 
-    2: Return Trip
-*   #### adultNum     <mark style="color:blue;">int</mark>                                                                                                                       <mark style="color:green;">Required</mark>
+1: Oneway
 
-    Adult passenger count, the number can be 1-9
-*   #### childNum      <mark style="color:blue;">int</mark>                                                                                                                       <mark style="color:green;">Required</mark>
+2: Return Trip
 
-    Adult passenger count, the number can be 0-8
-*   #### infantNum    <mark style="color:blue;">int</mark>                                                                                                                       <mark style="color:orange;">Optional</mark>
+#### `adultNum`     <mark style="color:blue;">int</mark>                                                                                                                       <mark style="color:green;">Required</mark>
 
-    Reserved, currently not support infant purchase
-*   #### fromCity      <mark style="color:blue;">string</mark>                                                                                                                 <mark style="color:green;">Required</mark>
+Adult passenger count, the number can be 1-9
 
-    IATA Code of departure city
-*   #### toCity            <mark style="color:blue;">string</mark>                                                                                                                 <mark style="color:green;">Required</mark>
+#### `childNum`      <mark style="color:blue;">int</mark>                                                                                                                       <mark style="color:green;">Required</mark>
 
-    IATA Code of arrival city
-*   #### fromDate     <mark style="color:blue;">string</mark>                                                                                                                 <mark style="color:green;">Required</mark>
+Adult passenger count, the number can be 0-8
 
-    Departure date, the format is YYYYMMDD
-*   #### retDate         <mark style="color:blue;">string</mark>                                                                                                                 <mark style="color:orange;">Optional</mark>
+#### `infantNum`    <mark style="color:blue;">int</mark>                                                                                                                       <mark style="color:orange;">Optional</mark>
 
-    Arrival date, the format is YYYYMMDD
+Reserved, currently not support infant purchase
 
-    Must not be earlier than fromDate. And it can be blank if tripType=1.
-*   #### requestSource         <mark style="color:blue;">string</mark>                                                                                                  <mark style="color:orange;">Optional</mark>
+#### `fromCity`      <mark style="color:blue;">string</mark>                                                                                                                 <mark style="color:green;">Required</mark>
 
-    Identify the source of the search traffic, E.g. Google Flights, Oganic Search, SkyScanner.
+IATA Code of departure city
+
+#### `toCity`            <mark style="color:blue;">string</mark>                                                                                                                 <mark style="color:green;">Required</mark>
+
+IATA Code of arrival city
+
+#### `fromDate`     <mark style="color:blue;">string</mark>                                                                                                                 <mark style="color:green;">Required</mark>
+
+Departure date, the format is YYYYMMDD
+
+#### `retDate`         <mark style="color:blue;">string</mark>                                                                                                                 <mark style="color:orange;">Optional</mark>
+
+Arrival date, the format is YYYYMMDD
+
+Must not be earlier than fromDate. And it can be blank if tripType=1.
+
+#### `requestSource`         <mark style="color:blue;">string</mark>                                                                                                  <mark style="color:orange;">Optional</mark>
+
+Identify the source of the search traffic, E.g. Google Flights, Oganic Search, SkyScanner.
 {% endtab %}
 
 {% tab title="Samples" %}
-```json
+```
 {
     "cid": "XXXXXXXX",
     "tripType": "1",
@@ -66,35 +79,37 @@ No preceding function needs to be carried out.
 {% endtab %}
 {% endtabs %}
 
-## Response
+## Response&#x20;
 
 {% tabs %}
 {% tab title="Schema" %}
-*   #### status     <mark style="color:blue;">int</mark>                                                                                                                         &#x20;
+#### `status`     <mark style="color:blue;">int</mark>                                                                                                                         &#x20;
 
-    0: success
+0: success
 
-    1: request data format error
+1: request data format error
 
-    2: route is forbidden
+2: route is forbidden
 
-    3: unauthorized access
-*   #### msg         <mark style="color:blue;">string</mark>                                                                                                                   &#x20;
+3: unauthorized access
 
-    Error message
-*   #### routings   Array<[Routing Element](search.md#route-element-schema)>                                                                                               <mark style="color:blue;"></mark>                                                                                              &#x20;
+#### `msg`        <mark style="color:blue;">string</mark>                                                                                                                   &#x20;
 
-    The array of the routings which include suitable flights and fares. click [<mark style="color:red;">here</mark> ](search.md#route-element-schema)to check the schema
+Error message
+
+#### `routings`   Array<[Routing Element](search.md#route-element-schema)>                                                                                               <mark style="color:blue;"></mark>                                                                                              &#x20;
+
+The array of the routings which include suitable flights and fares. Click [<mark style="color:red;">here</mark> ](search.md#route-element-schema)to check the schema
 {% endtab %}
 
 {% tab title="Samples" %}
-```json
+```
 {
     "status":0,
     "msg":"success",
     "routings":[
         {
-            "routingIdentifier":"K7jWWc8Rq4ETSMWRHlhxhAMDhwUTz1Ty46VwnmDdMe8ZPZQyz3X0KkJxlQV1LwyENuuoYtO28B5k0QK+Vd8Ib4BmiiHQLzX9R7e0VPq8abH5gxFLgeOVQuerBxMqkOi239OWHU/iXVuggQcrbUJ3uxbMNdvNbRECTVvwV3xXgXl07i/72WQoPpN8EA8lik2pKNEtHMsuVpQDk6Wry7MaHQeNspRYJwDEY7i5tKVoTua5c8VEC8fd0g\u003d\u003d",
+            "routingIdentifier":"",
             "supportCreditTransPayment":"0",
             "currency":"USD",
             "adultPrice":16.46,
@@ -215,7 +230,7 @@ No preceding function needs to be carried out.
             "vendorFare":null
         },
        {
-            "routingIdentifier":"K7jWWc8Rq4ETSMWRHlhxhAMDhwUTz1Ty46VwnmDdMe8+9iUjY985ebmViBmzDc1XBptG/tw8XP3qStiFIM0TkNiO83lw4Go4PlwD34tTdxgo74G3LxIDLb0x2x/GJ+5lqHY8luoccEuvaHoJnXRdq96eRncqBt0fl8vDLAq5k/yfRcs6VgKolBGIC2Ud+VyoPlwD34tTdxhCT5N+M50KbYlJmLtdyVlrkNXMng1ISqaDhGqEzZGB0Xlhz1FL0gDU/9UivpvdJUtdvFy5jyNCOMeylCQHpGoJTbSm1kk+c6Q\u003d",
+            "routingIdentifier":"",
             "supportCreditTransPayment":"0",
             "currency":"USD",
             "adultPrice":31.56,
@@ -423,404 +438,551 @@ No preceding function needs to be carried out.
             "vendorFare":null
         }
    ]
-}s
+}
 ```
 {% endtab %}
 {% endtabs %}
 
 {% hint style="info" %}
-The search results will include a lot of items. Some hightlight points are as belows : &#x20;
 
-* The returned <mark style="color:blue;">currency</mark> is by configuration according to the business agreement between you and Atlas
-* The total cost to purchase this routing for a single <mark style="color:blue;"></mark> adult passenger is as follows:
 
-&#x20;     <mark style="color:blue;">adultPrice</mark> + <mark style="color:blue;">adultTax</mark> + <mark style="color:blue;">transactionFeePerPax</mark>
+#### The search results will include a lot of items. Some highlights are: &#x20;
 
-*   For the airlines which support pass through payment method, we would set <mark style="color:blue;">supportCreditTransPayment</mark> to 1 and present the vendor's fare in the <mark style="color:blue;">vendorFare</mark> Element.&#x20;
-
-    In reverse, if the airline doesn't support pass through payment method, we would set supportCreditTransPayment to 0 and the vendorFare Element will be null.
-* <mark style="color:blue;">ancillaryProductElements</mark> in search response can be shown or hidden according to the configuration of each client in the backend system.
+* The returned currency is by configuration according to the business agreement between you and Atlas.&#x20;
+* The total cost to purchase for a single adult passenger is: `adultPrice` + `adultTax` + `transactionFeePerPax`&#x20;
+* For the airlines which support pass through payment method, we would set `supportCreditTransPayment` to `1` and present the vendor's fare in the `vendorFare` element. Alternatively, if the airline doesn't support pass through payment method, we would set `supportCreditTransPayment` to `0` and the `vendorFare` element will be `null`.&#x20;
+* You can choose to show or hide `ancillaryProductElements` in search response, according to the configuration of each client in the backend system.&#x20;
 {% endhint %}
 
-### <mark style="color:blue;">Route Element Schema</mark>
+### Route Element Schema
 
 {% tabs %}
 {% tab title="Schema" %}
-*   #### routingIdentifier     <mark style="color:blue;">string</mark>                                                                                                    &#x20;
 
-    The unique identifier for a particular route It will be used in the verify request.
-*   #### supportCreditTransPayment   <mark style="color:blue;">string</mark>
 
-    The tag to identify if the fare support the client to pay with client's credit card.
+#### `routingIdentifier`     <mark style="color:blue;">string</mark>                                                                                                    &#x20;
 
-    1    represents    support credit card transpayment
+This unique string identifier is used to verify requests for a particular route.
 
-    0   represents     Not support credit card transpayment
-*   #### currency    <mark style="color:blue;">string</mark>
 
-    Currency.
-*   #### adultPrice   <mark style="color:blue;">decimal</mark>
 
-    Adult fare per passenger.
-*   #### adultTax      <mark style="color:blue;">decimal</mark>
+#### `supportCreditTransPayment`   <mark style="color:blue;">string</mark>
 
-    Adult tax per passenger.
-*   #### childPrice   <mark style="color:blue;">decimal</mark>
+This tag is used to identify if the fare needs to be paid using the client's credit card. If it is set to 1, then the API will allow you to pass through client’s credit card details for payment. If it is set to 0, the credit card details will not be passed through.
 
-    Child fare per passenger.
-*   #### childTax      <mark style="color:blue;">decimal</mark>
 
-    Child tax per passenger.
-*   #### InfantPrice   <mark style="color:blue;">decimal</mark>
 
-    Reserved, currently not support infant purchase.
-*   #### InfantTax      <mark style="color:blue;">decimal</mark>
+#### `currency`    <mark style="color:blue;">string</mark>
 
-    Reserved, currently not support infant purchase.
-*   #### transactionFeePerPax    <mark style="color:blue;">decimal</mark>
+The currency in which Atlas settles transactions with you.
 
-    Technical service fee per passenger.
-*   #### nationalityType     <mark style="color:blue;">int</mark>
 
-    Nationality limitation type
 
-    0 No Limitation
+#### `adultPrice`   <mark style="color:blue;">decimal</mark>
 
-    1 Allowed
+Adult fare per passenger.
 
-    2 Forbidden
-*   #### nationality     <mark style="color:blue;">string</mark>
 
-    Nationality limitation value
 
-    IATA country code, use comma if more than one country
+#### `adultTax`      <mark style="color:blue;">decimal</mark>
 
-    Blank means no limitation.
-*   #### suitAge        <mark style="color:blue;">string</mark>
+Adult tax per passenger.
 
-    Passenger age limitation
 
-    The format is 12-24
 
-    Blank means no limitation.
-*   #### paxType      <mark style="color:blue;">string</mark>
+#### `childPrice`   <mark style="color:blue;">decimal</mark>
 
-    Currently only ADT fare is available.
-*   #### fromSegments      Array<[Segment Element](search.md#3.-segment-element-schema)>
+Child fare per passenger.
 
-    Outbound segments, click [<mark style="color:red;">**here**</mark> ](search.md#segment-element-schema)to check the schema
-*   #### retSegments         Array<[Segment Element](search.md#3.-segment-element-schema)>
 
-    Inbound segments, click [<mark style="color:red;">**here**</mark> ](search.md#segment-element-schema)to check the schema
-*   #### rule                Object<[RuleElement](search.md#5.-rule-element-schema)>
 
-    RuleElement, click [<mark style="color:red;">**here**</mark>](search.md#rule-element-schema) <mark style="color:red;">****</mark> to check the schema
-*   #### ancillaryProductElements    Array<[AncillaryProductElement](search.md#9.-ancillaryproduct-element-schema)>
+#### `childTax`     <mark style="color:blue;">decimal</mark>
 
-    Currently only baggage is available in ancillaries.
+Child tax per passenger.
 
-    * #### [AncillaryProductElement](search.md#9.-ancillaryproduct-element-schema)
-      *   #### segmentIndex                              <mark style="color:blue;">int</mark>
 
-          Segment sequence, start from 1
 
-          If it is return trip, sequence outbond and inbound together
-      *   #### productCode                                <mark style="color:blue;">string</mark>
+#### `InfantPrice`    <mark style="color:blue;">decimal</mark>
 
-          Unique identifier for the ancillary product
+Reserved, currently does not support infant purchase.
 
-          It would be used in the order request
-      *   #### productName                                <mark style="color:blue;">string</mark>
 
-          Ancillary product name
-      *   #### productType                                 <mark style="color:blue;">int</mark>
 
-          Ancillary product type
+#### `InfantTax`     <mark style="color:blue;">decimal</mark>
 
-          1: baggage
+Reserved, currently does not support infant purchase.
 
-          Currently only baggage is available
-      *   #### price                                                 <mark style="color:blue;">decimal</mark>
 
-          Price for this ancillary
-      *   #### currency                                          <mark style="color:blue;">string</mark>
 
-          Currency for this price
-      * #### auxBaggageElement                 Object<[AuxBaggageElement](search.md#10.-auxbaggage-element-schema)>
-        * #### [AuxBaggageElement](search.md#10.-auxbaggage-element-schema)
-          *   #### piece                                                 <mark style="color:blue;">int</mark>
+#### `transactionFeePerPax`    <mark style="color:blue;">decimal</mark>
 
-              0：No Limitation about piece;
+Technical service fee per passenger.
 
-              \>0：Maximum pieces
-          *   #### weight                                             <mark style="color:blue;">int</mark>
 
-              Maximum weight for ancillary baggage;
 
-              Should be greater than 0
-          *   #### isAllWeight                                   <mark style="color:blue;">boolean</mark>
+#### `nationalityType`     <mark style="color:blue;">int</mark>
 
-              True：The weight is for all the pieces;
+Nationality limitation type
 
-              False：The weight is for each piece
-*   #### vendorFare     Object<[VendorFare Element](search.md#4.-vendorfare-element-schema)>
+0 No Limitation
 
-    To identify the vendor’s fare with vendor’s currency. It is only availabe when supportCreditTransPayment = 1
-* #### [VendorFare Element](search.md#4.-vendorfare-element-schema)
-  *   #### vendorAdultPrice         <mark style="color:blue;">decimal</mark>
+1 Allowed
 
-      Adult fare per passenger in vendor’s currency.
-  *   #### vendorAdultTax             <mark style="color:blue;">decimal</mark>
+2 Forbidden
 
-      Adult tax per passenger in vendor’s currency.
-  *   #### vendorChildPrice          <mark style="color:blue;">decimal</mark>
 
-      Child fare per passenger in vendor’s currency.
-  *   #### vendorChildTax              <mark style="color:blue;">decimal</mark>
 
-      Child tax per passenger in vendor’s currency.
-  *   #### vendorCurrency             <mark style="color:blue;">string</mark>
+#### `nationality`     <mark style="color:blue;">string</mark>
 
-      Vendor’s currency.
+This is nationality limitation value, pass the IATA country code, use a comma if more than one country. Blank means there is no limitation.
+
+
+
+#### `suitAge`       <mark style="color:blue;">string</mark>
+
+Passenger age limitation format is 12-24. Blank means no limitation.
+
+
+
+#### `paxType`      <mark style="color:blue;">string</mark>
+
+Currently, only ADT fare is available.
+
+
+
+#### `fromSegments`      Array<[Segment Element](search.md#3.-segment-element-schema)>
+
+For outbound segments, click [<mark style="color:red;">**here**</mark> ](search.md#segment-element-schema)to check the schema
+
+
+
+#### `retSegments`         Array<[Segment Element](search.md#3.-segment-element-schema)>
+
+For inbound segments, click [<mark style="color:red;">**here**</mark> ](search.md#segment-element-schema)to check the schema
+
+
+
+#### `rule`               Object<[RuleElement](search.md#5.-rule-element-schema)>
+
+Pass `RuleElement` info for every booking to include the standard details such as baggage allowance, refund rules, change rules for the selected airline. Click [here](file://api-reference/shopping-and-ticketing/search#rule-element-schema) to check the schema.&#x20;
+
+
+
+#### `ancillaryProductElements`    Array<[AncillaryProductElement](search.md#9.-ancillaryproduct-element-schema)>
+
+Currently only baggage is available in ancillaries.
+
+
+
+#### `AncillaryProductElement` includes the following parameters:&#x20;
+
+*   #### `segmentIndex`                              <mark style="color:blue;">int</mark>
+
+    Segment sequence, start from 1. If it is return trip, sequence outbound and inbound together.
+*   #### `productCode`                                <mark style="color:blue;">string</mark>
+
+    Unique identifier for the ancillary product. It would be used in the order request.
+*   #### `productName`                                <mark style="color:blue;">string</mark>
+
+    Ancillary product name.
+*   #### `productType`                                 <mark style="color:blue;">int</mark>
+
+    Ancillary product type
+
+    1: baggage
+
+    Currently, only baggage is available.
+*   #### `price`                                                <mark style="color:blue;">decimal</mark>
+
+    Price for this ancillary.
+*   #### `currency`                                          <mark style="color:blue;">string</mark>
+
+    The currency in which Atlas settles transactions with you.
+* #### `auxBaggageElement`                 Object<[AuxBaggageElement](search.md#10.-auxbaggage-element-schema)>
+  * #### `AuxBaggageElement` includes the following parameters
+    *   #### `piece`                                                 <mark style="color:blue;">int</mark>
+
+        0：No Limitation about piece;
+
+        \>0：Maximum pieces
+    *   #### `weight`                                            <mark style="color:blue;">int</mark>
+
+        Value mentions maximum weight for ancillary baggage; this should be greater than 0.
+    *   #### `isAllWeight`                                   <mark style="color:blue;">boolean</mark>
+
+        True：The weight is for all the pieces
+
+        False：The weight is for each piece
+
+
+
+
+
+#### `vendorFare`     Object<[VendorFare Element](search.md#4.-vendorfare-element-schema)>
+
+To identify the vendor’s fare with vendor’s currency. It is only available when `supportCreditTransPayment` = 1.
+
+
+
+#### &#x20;[VendorFare Element](file://api-reference/shopping-and-ticketing/search#4.-vendorfare-element-schema)&#x20;
+
+*   #### `vendorAdultPrice`         <mark style="color:blue;">decimal</mark>
+
+    Adult fare per passenger in vendor’s currency.
+*   #### `vendorAdultTax`             <mark style="color:blue;">decimal</mark>
+
+    Adult tax per passenger in vendor’s currency.
+*   #### `vendorChildPrice`          <mark style="color:blue;">decimal</mark>
+
+    Child fare per passenger in vendor’s currency.
+*   #### `vendorChildTax`              <mark style="color:blue;">decimal</mark>
+
+    Child tax per passenger in vendor’s currency.
+*   #### `vendorCurrency`             <mark style="color:blue;">string</mark>
+
+    This is the currency in which your customers will do transaction with you.
+
+&#x20;
 {% endtab %}
 {% endtabs %}
 
-### <mark style="color:blue;">Segment Element Schema</mark>
+### Segment Element Schema
 
 {% tabs %}
 {% tab title="Schema" %}
-*   #### carrier                       <mark style="color:blue;">string</mark>                                                                                                    &#x20;
+#### `carrier`                       <mark style="color:blue;">string</mark>                                                                                                    &#x20;
 
-    IATA code of airline.
-*   #### flightNumber         <mark style="color:blue;">string</mark>
+IATA code of airline.
 
-    Flight number
 
-    The format is : CA123 or TR021 or FR1290.
-*   #### depAirport              <mark style="color:blue;">string</mark>
 
-    IATA code of departure airport.
-*   #### depTime                  <mark style="color:blue;">string</mark>
+#### `flightNumber`         <mark style="color:blue;">string</mark>
 
-    Departure time of the flight
+Value denotes flight number. The format is: CA123 or TR021 or FR1290, the letters denote the carrier and the three/four-digit number that follows is the flight number.
 
-    The format is ：yyyyMMddHHmm, 202203100300 means 10MAR2022 03:00
-*   #### arrAirport                <mark style="color:blue;">string</mark>
 
-    IATA code of arrival airport
-*   #### arrTime                     <mark style="color:blue;">string</mark>
 
-    Arrival time of the flight
+#### `depAirport`              <mark style="color:blue;">string</mark>
 
-    The format is ：yyyyMMddHHmm, 202203100300 means 10MAR2022 03:00
-*   #### stopCities               <mark style="color:blue;">string</mark>
+IATA code of departure airport.
 
-    Stop airports of the fight, IATA code, , use "," to separate if transfer airports count is higher than 1. E.g. "CGK,SUB".
 
-    Blank means non-stop flight.
-*   #### duration               <mark style="color:blue;">int</mark>
 
-    The flying time of this flight with the unit in minutes.
-*   #### codeShare              <mark style="color:blue;">boolean</mark>
+#### `depTime`                  <mark style="color:blue;">string</mark>
 
-    True : code share
+Departure time of the flight. The format is ：yyyyMMddHHmm, 202203100300 means 10MAR2022 03:00
 
-    False : Not code share
-*   #### cabin                         <mark style="color:blue;">string</mark>
 
-    Booking code for the fare.
 
-    In terms of the LCCs which do not provide this, the cabin would be blank
-*   #### cabinClass             <mark style="color:blue;">int</mark>
+#### `arrAirport`                <mark style="color:blue;">string</mark>
 
-    Service grade of the fare
+IATA code of arrival airport.
 
-    1 : Economy
 
-    2 : Business
 
-    3 : First Class
-*   #### seatCount              <mark style="color:blue;">int</mark>
+#### `arrTime`                    <mark style="color:blue;">string</mark>
 
-    Remaining seats for the fare.
-*   #### aircraftCode           <mark style="color:blue;">string</mark>
+Arrival time of the flight. The format is ：yyyyMMddHHmm, 202203100300 means 10MAR2022 03:00
 
-    Aircraft equipment
-*   #### depTerminal            <mark style="color:blue;">string</mark>
 
-    Departure terminal
-*   #### arrTerminal               <mark style="color:blue;">string</mark>
 
-    Arrival terminalal
-*   #### operatingCarrier     <mark style="color:blue;">string</mark>
+#### `stopCities`              <mark style="color:blue;">string</mark>
 
-    Operating carrier
+Name of cities from where the passengers will take connecting flights. Include IATA code of cities and use a comma in case of multiple cities to separate transfer airports count is higher than 1. For example: CGK, SUB. Blank means non-stop flight.
 
-    It is blank when codeShare=false
-*   #### operatingFlightnumber      <mark style="color:blue;">string</mark>
 
-    Operating flight number
 
-    It is blank when codeShare=false
+#### `duration`               <mark style="color:blue;">int</mark>
+
+The flying duration in minutes.
+
+
+
+#### `codeShare`              <mark style="color:blue;">boolean</mark>
+
+True : code share
+
+False : Not code share
+
+
+
+#### `cabin`                         <mark style="color:blue;">string</mark>
+
+Booking code for the fare. For the LCCs which do not provide cabin options, the cabin string will be blank.
+
+
+
+#### `cabinClass`             <mark style="color:blue;">int</mark>
+
+Service grade of the fare
+
+1 : Economy
+
+2 : Business
+
+3 : First Class
+
+
+
+#### `seatCount`              <mark style="color:blue;">int</mark>
+
+Remaining seats for the fare.
+
+
+
+#### `aircraftCode`          <mark style="color:blue;">string</mark>
+
+This value identifies the aircraft model, which is the IATA aircraft code. For example, Airbus A380 = 388, Airbus A350 = 351.
+
+
+
+#### `depTerminal`            <mark style="color:blue;">string</mark>
+
+Departure terminal.
+
+
+
+#### `arrTerminal`               <mark style="color:blue;">string</mark>
+
+Arrival terminal.
+
+
+
+#### `operatingCarrier`     <mark style="color:blue;">string</mark>
+
+Operating carrier. It is blank when `codeshare=false`
+
+``
+
+#### `operatingFlightnumber`      <mark style="color:blue;">string</mark>
+
+Operating flight number. It is blank when `codeshare=false`
+
+``
 {% endtab %}
 {% endtabs %}
 
-### <mark style="color:blue;">Rule Element Schema</mark>
+### Rule Element Schema
 
 {% tabs %}
 {% tab title="Schema" %}
-*   #### hasBaggage                              <mark style="color:blue;">int</mark>
+#### `hasBaggage`                                                         <mark style="color:blue;">int</mark>&#x20;
 
-    A tag to identify if the fare include free checked-in baggage
+This tag is used to identify if the fare includes free checked-in baggage.&#x20;
 
-    0 : Not included
+0: Not included&#x20;
 
-    1 : Included
-*   #### BaggageElements                 Array<[BaggageElement](search.md#6.-baggage-element-schema)>
+1: Included&#x20;
 
-    Free checked-in baggage information included in the fare.
 
-    * #### [BaggageElement](search.md#6.-baggage-element-schema)
-      *   #### segmentNo                              <mark style="color:blue;">int</mark>
 
-          Segment sequence, start from 1.
 
-          If it is roundtrip, sequence outbond and inbound together.
-      *   #### passengerType                     <mark style="color:blue;">string</mark>
 
-          0: ADT
+#### `BaggageElements`                                                 Array<<mark style="color:blue;">BaggageElement</mark>>&#x20;
 
-          1: CHD
+Free checked-in baggage information included in the fare.&#x20;
 
-          2: INF
+[BaggageElement](file://api-reference/shopping-and-ticketing/search#6.-baggage-element-schema)&#x20;
 
-          If search or verify for ADT only, then only ADT is returned;
 
-          If search or verify for ADT+CHD, then ADT and CHD are returned.
-      *   #### baggagePiece                        <mark style="color:blue;">int</mark>
 
-          Baggage pieces：
+#### `segmentNo`                                            <mark style="color:blue;">int</mark>&#x20;
 
-          0  No limitation
+Segment sequence, start from 1.&#x20;
 
-          \>0 Maximum pieces
-      *   #### baggageWeight                    <mark style="color:blue;">int</mark>
+If it is roundtrip, sequence outbound and inbound together.&#x20;
 
-          Baggage Weight, with the unit of KG
 
-          0  means No Free baggage
-*   #### refundRules                              Array<[RefundElement](search.md#7.-refund-element-schema)>
 
-    Refund rules.
+#### `passengerType`                                    string&#x20;
 
-    * #### [RefundElement](search.md#7.-refund-element-schema)
-      *   #### refundType                               <mark style="color:blue;">int</mark>
+0: ADT&#x20;
 
-          Refund Type
+1: CHD&#x20;
 
-          0：Wholly unused ticket;
+2: INF&#x20;
 
-          1：Partially used ticket(For example when the passenger has used outbound flight, and want to refund inbound flight)
-      *   #### refundStatus                           <mark style="color:blue;">string</mark>
+If search or verify requested for ADT only, then only ADT is returned.&#x20;
 
-          Refund rule type
+If search or verify requested for ADT+CHD, then ADT and CHD are returned.&#x20;
 
-          T：Non refundable;
 
-          H：Refundable with restrictions;
 
-          F：Free for refund
-      *   #### refundFee                                 <mark style="color:blue;">decial</mark>
+#### `baggagePiece`                                        int&#x20;
 
-          Refund fee
+Baggage pieces:&#x20;
 
-          If refundStatus =H, it should not be null;
+0: No limitation on the number of pieces&#x20;
 
-          If refundStatus =T/F, it can be null.
-      *   #### currency                                    <mark style="color:blue;">string</mark>
+\>0: Maximum pieces&#x20;
 
-          Currency of refund fee
 
-          If refundStatus =H, it should not be null.
-      *   #### refNoshow                                <mark style="color:blue;">string</mark>
 
-          Refund status when noshow happens
+#### `baggageWeight`                                     int&#x20;
 
-          T：Non refundable;
+Baggage Weight, in KGs is mentioned if the airline offers free check-in baggage.&#x20;
 
-          H：Refundable with restrictions;
+&#x20;    0: No free baggage&#x20;
 
-          F：Free for refund
-      *   #### refNoShowCondition           <mark style="color:blue;">string</mark>
 
-          How many hours before departure means no show
-      *   #### refNoshowFee                         <mark style="color:blue;">string</mark>
 
-          Total refund fee when noshow happens
 
-          If refNoshow =H，it should not be null;
 
-          This value includes the refund fee and noshow penalty when noshow happens
-*   #### changesRules                         Array<[ChangesElement](search.md#8.-change-element-schema)>
+#### &#x20;`refundRules`                                                           Array\<RefundElement> &#x20;
 
-    Change rules
+Refer to refund rules as mentioned in Refund Element. &#x20;
 
-    * #### [ChangesElement](search.md#8.-change-element-schema)
-      *   #### changesType                              <mark style="color:blue;">int</mark>
+[RefundElement](file://api-reference/shopping-and-ticketing/search#7.-refund-element-schema)&#x20;
 
-          Change flight type
 
-          0：Wholly unused ticket;
 
-          1：Partially used ticket(For example when the passenger has used outbound flight, and want to refund inbound flight)
-      *   #### changesStatus                          <mark style="color:blue;">string</mark>
+#### `refundType`                                           int&#x20;
 
-          Change flight rule type
+0: Wholly unused ticket&#x20;
 
-          T：Non changeable;
+1: Partially used ticket (For example, when the passenger has used an outbound flight and wants to refund an inbound flight.)&#x20;
 
-          H：Changeable with restrictions;
 
-          F：Free for change flight
-      *   #### changesFee                                 <mark style="color:blue;">decial</mark>
 
-          Change flight fee
+#### `refundStatus`            string&#x20;
 
-          If changesStatus =H, it should not be null;
+Refund rule types:&#x20;
 
-          If changesStatus =T/F, it can be null.
-      *   #### currency                                       <mark style="color:blue;">string</mark>
+T: Non refundable&#x20;
 
-          Currency of change fee
+H: Refundable with restrictions&#x20;
 
-          If changesStatus =H, it should not be null.
-      *   #### refNoshow                                   <mark style="color:blue;">string</mark>
+F: Free for refund&#x20;
 
-          Change flight rule when noshow happens
 
-          T：Non changeable;
 
-          H：Changeable with restrictions;
+#### `refundFee`                                                 decimal&#x20;
 
-          F： Free for change flight
-      *   #### refNoShowCondition               <mark style="color:blue;">int</mark>
+Refund fee&#x20;
 
-          How many hours before departure means no show
-      *   #### refNoshowFee                            <mark style="color:blue;">string</mark>
+If refundStatus = H, it should not be null&#x20;
 
-          Total fee for change flight when noshow happens
+If refundStatus = T/F, it can be null.&#x20;
 
-          If refNoshow =H，it should not be null;
 
-          This value includes the change flight fee and noshow penalty when noshow happens
+
+#### `currency`                                                    string&#x20;
+
+The currency in which Atlas settles transactions with you, if refundStatus = H&#x20;
+
+
+
+#### `refNoshow`                                                 string&#x20;
+
+Refund status in case of no show&#x20;
+
+T: Non refundable&#x20;
+
+H: Refundable with restrictions&#x20;
+
+F: Free for refund&#x20;
+
+
+
+#### `refNoShowCondition`                                 string&#x20;
+
+Time before scheduled flight departure, by which passenger(s) need to check in.&#x20;
+
+
+
+#### `refNoshowFee`                                             string&#x20;
+
+Total refund fee in case of no show&#x20;
+
+If refNoshow = H, it should not be null&#x20;
+
+&#x20;                       This value includes the refund fee and no-show penalty&#x20;
+
+
+
+
+
+#### `changesRules`                                                              Array\<ChangesElement>&#x20;
+
+This function is used to fetch the change rules of the selected airline.&#x20;
+
+[ChangesElement](file://api-reference/shopping-and-ticketing/search#8.-change-element-schema)&#x20;
+
+
+
+#### `changesType`    int&#x20;
+
+Change flight type&#x20;
+
+0: Wholly unused ticket&#x20;
+
+1: Partially used ticket (For example, when the passenger has used an outbound flight and wants to refund an inbound flight)&#x20;
+
+
+
+#### `changesStatus`   string&#x20;
+
+Change flight rule type&#x20;
+
+T: Non changeable&#x20;
+
+H: Changeable with restrictions&#x20;
+
+F: Free for change flight&#x20;
+
+
+
+#### `changesFee`    decimal&#x20;
+
+Change flight fee&#x20;
+
+If changesStatus = H, it should not be null&#x20;
+
+If changesStatus = T/F, it can be null&#x20;
+
+
+
+#### `currency`    string&#x20;
+
+The currency in which Atlas settles transactions with you.&#x20;
+
+If changesStatus = H, it should not be null&#x20;
+
+
+
+#### `refNoshow`                                                 string &#x20;
+
+Change flight rule in case of no show.&#x20;
+
+T: Non changeable&#x20;
+
+H: Changeable with restrictions&#x20;
+
+F: Free for change flight&#x20;
+
+
+
+#### `refNoShowCondition`      int&#x20;
+
+Time before scheduled flight departure, by which passenger(s) need to check in.&#x20;
+
+
+
+#### `refNoshowFee`      string&#x20;
+
+The total fee charged to change flight in case of no show.&#x20;
+
+If refNoshow = H, it should not be null.&#x20;
+
+This value includes the change flight fee and no-show penalty.&#x20;
 {% endtab %}
 {% endtabs %}
 
-## How to ...... <a href="#owrt" id="owrt"></a>
+## How to ......
 
-### 1. How to search for Oneway or Roundtrip flights? <a href="#owrt" id="owrt"></a>
+### 1. How to search for Oneway or Roundtrip flights?
 
-If you want to search for oneway flights, please set tripType as 1 and keep retDate blank
+If you want to search for oneway flights, please set `tripType` as 1 and keep `retDate` blank
 
 ```json
 {
@@ -830,7 +992,7 @@ If you want to search for oneway flights, please set tripType as 1 and keep retD
 }
 ```
 
-In the response, the retSegments of each routing will be empty
+In the response, the `retSegments` of each routing will be empty
 
 ```json
 "routings": [
@@ -850,7 +1012,7 @@ In the response, the retSegments of each routing will be empty
 ]
 ```
 
-If you want to search for roundtrip flights, please set tripType as 2 and input retDate
+If you want to search for roundtrip flights, please set `tripType` as 2 and input `retDate`
 
 ```css
 {
@@ -860,7 +1022,7 @@ If you want to search for roundtrip flights, please set tripType as 2 and input 
 }
 ```
 
-In the response, the <mark style="color:green;">retSegments</mark> of each routing will have data.
+In the response, the <mark style="color:green;">`retSegments`</mark> of each routing will be empty
 
 ```json
 "routings": [
@@ -884,9 +1046,9 @@ In the response, the <mark style="color:green;">retSegments</mark> of each routi
 ]
 ```
 
-### 2.How to identify direct or connection flights
+### 2. How to identify direct or connection flights
 
-Regarding direct flights, there will be only one segment in fromSegments or retSegments
+Regarding direct flights, there will be only one segment in `fromSegments` or `retSegments`
 
 ```javascript
  {
@@ -903,7 +1065,7 @@ Regarding direct flights, there will be only one segment in fromSegments or retS
 }
 ```
 
-Regarding connection flights, there will be multiple segments in fromSegments or retSegments
+Regarding connection flights, there will be multiple segments in `fromSegments` or `retSegments`
 
 ```json
  {
@@ -929,11 +1091,11 @@ Regarding connection flights, there will be multiple segments in fromSegments or
 }
 ```
 
-### 3.Where is the baggage allowance mentioned?
+### 3. Where is the baggage allowance mentioned?
 
-#### 1) Free checked-in baggage
+#### 3.1. Free checked-in baggage
 
-The free checked-in baggage allowance of each fare is available within both “search” and the “verify” response.
+The free checked-in baggage allowance for each fare is available within both `search` and the `verify` response.
 
 {% tabs %}
 {% tab title="Schema" %}
@@ -1010,9 +1172,9 @@ The free checked-in baggage allowance of each fare is available within both “s
 {% endtab %}
 {% endtabs %}
 
-#### 2) Extra baggage offering
+#### 3.2. Extra baggage offering
 
-The details of the extra baggage offering are available in the ancillaryProductElements within both “search” and the “verify” response
+The details of the extra baggage offering are available in the `ancillaryProductElements` within both “search” and the “verify” response
 
 {% tabs %}
 {% tab title="Schema" %}
@@ -1048,7 +1210,7 @@ The details of the extra baggage offering are available in the ancillaryProductE
   * #### AuxBaggageElement
     *   #### piece                                                 <mark style="color:blue;">int</mark>
 
-        0：No Limitation about piece;
+        0：No Limitation about pieces
 
         \>0：Maximum pieces
     *   #### weight                                             <mark style="color:blue;">int</mark>

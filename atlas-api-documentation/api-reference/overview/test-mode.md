@@ -1,20 +1,11 @@
 # Test mode
 
-## Test mode <a href="#overview" id="overview"></a>
+### Test Mode&#x20;
 
-The integration to Atlas needs to be built in the TEST mode.
+Like any other integration project, you should build your integration with Atlas API in the TEST mode. We want you to experience the Atlas API risk-free and explore all the different features. In Sandbox or the TEST mode you can test run the booking process without the risk of losing any money or booking actual flight tickets.&#x20;
 
-Test mode is a "sandbox" which lets you use the Atlas API risk-free, with no danger of spending any money or booking flights you don't want!
+All you need is a testing access token as well as the sandbox URL to use the test mode. You can get this information through email after you have signed an NDA with Atlas. With a testing access token, you'll only be able to access resources created in test mode. With a live access token, you'll only be able to access resources created in live mode.&#x20;
 
-You'll need to get a testing access token as well as the sandbox URL to use the test mode. You can get these information through email after it's finished.
+### Atlas Sandbox&#x20;
 
-With a testing access token, you'll only be able to access resources created in test mode. With a live access token, you'll only be able to access resources created in live mode.
-
-### Atlas Sandbox <a href="#duffel-airways" id="duffel-airways"></a>
-
-When you search for flights in the test mode, you'll see offers from Atlas Sandbox.&#x20;
-
-The airlines' fares in Sandbox are not as comprehensive and up-to-date as the Production environment. Atlas will not create real bookings or issue real tickets with the airline during the testing process.
-
-
-
+When you search for flights in the test mode, you'll see offers from Atlas Sandbox. The airlines' fares in Sandbox are not as comprehensive and up to date as in the production environment. Atlas will not create real bookings or issue real tickets with the airline in the test mode.&#x20;
