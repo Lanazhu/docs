@@ -54,12 +54,12 @@ Order function should be called in prior to this call.
     2: Ticketed
 
     \-3: Cancelled(When the booking is failed due to the request information)
-*   #### errorCode                               <mark style="color:blue;">string</mark>                                                                                     <mark style="color:orange;">Optional</mark>
+*   #### ticketErrorCode                               <mark style="color:blue;">string</mark>                                                                         <mark style="color:orange;">Optional</mark>
 
     It's only available when orderStatus = -3.&#x20;
 
-    Please check the definition of errorCode here
-*   #### errorMessage                       <mark style="color:blue;">string</mark>                                                                                      <mark style="color:orange;">Optional</mark>
+    Please check the definition of ticketErrorCode [**here**](../overview/errors.md#ticket-error-codes)****
+*   #### ticketErrorMessage                       <mark style="color:blue;">string</mark>                                                                         <mark style="color:orange;">Optional</mark>
 
     It's only available when orderStatus = -3.&#x20;
 

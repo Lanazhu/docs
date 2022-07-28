@@ -27,10 +27,10 @@ Method : Post
   *   #### orderStatus                           <mark style="color:blue;">int</mark>                                                                            &#x20;
 
       orderStatus=-3 means cancelled
-  *   #### errorCode                               <mark style="color:blue;">string</mark>
+  *   #### ticketErrorCode                  <mark style="color:blue;">string</mark>
 
-      please check the definition of errorCode here
-  *   #### errorMessage                       <mark style="color:blue;">string</mark>                                                                      &#x20;
+      please check the definition of ticketErrorCode [**here**](../overview/errors.md#ticket-error-codes)****
+  *   #### ticketErrorMessage           <mark style="color:blue;">string</mark>                                                                      &#x20;
 
       Error message
 {% endtab %}
