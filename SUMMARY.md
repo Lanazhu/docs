@@ -30,6 +30,7 @@
     * [Notifications by Webhook](atlas-api-documentation/api-reference/notifications-by-webhook/README.md)
       * [Register Webhook](atlas-api-documentation/api-reference/notifications-by-webhook/register-webhook.md)
       * [Ticket Complete  Notification](atlas-api-documentation/api-reference/notifications-by-webhook/ticket-complete-notification.md)
+      * [Order Cancel Notification](atlas-api-documentation/api-reference/notifications-by-webhook/order-cancel-notification.md)
       * [Schedule Change Notifiction](atlas-api-documentation/api-reference/notifications-by-webhook/schedule-change-notifiction.md)
       * [Addon Complete Notification](atlas-api-documentation/api-reference/notifications-by-webhook/addon-complete-notification.md)
       * [Refund Complete Notification](atlas-api-documentation/api-reference/notifications-by-webhook/refund-complete-notification.md)
