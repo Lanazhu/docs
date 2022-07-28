@@ -52,6 +52,18 @@ Order function should be called in prior to this call.
     1: Ticketing-in-Process
 
     2: Ticketed
+
+    \-3: Cancelled(When the booking is failed due to the request information)
+*   #### errorCode                               <mark style="color:blue;">string</mark>                                                                                     <mark style="color:orange;">Optional</mark>
+
+    It's only available when orderStatus = -3.&#x20;
+
+    Please check the definition of errorCode here
+*   #### errorMessage                       <mark style="color:blue;">string</mark>                                                                                      <mark style="color:orange;">Optional</mark>
+
+    It's only available when orderStatus = -3.&#x20;
+
+    Error message
 *   #### totalPrice                               <mark style="color:blue;">decimal</mark>                                                                                   <mark style="color:green;">Required</mark>
 
     Total fare of this order in the currency Atlas settled with you.
