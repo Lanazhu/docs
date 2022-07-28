@@ -40,17 +40,15 @@ An error's `code` is an enum of the following values:
 
 ### Ticket error codes
 
-| Code                                 | Description                         |
-| ------------------------------------ | ----------------------------------- |
-| <mark style="color:blue;">601</mark> | Price change                        |
-| <mark style="color:blue;">602</mark> | Flight not found                    |
-| <mark style="color:blue;">603</mark> | Flight sould out                    |
-| <mark style="color:blue;">604</mark> | Payment declined by airline         |
-| <mark style="color:blue;">605</mark> | Incorrect passenger information     |
-| <mark style="color:blue;">606</mark> | Inconsistent flight information     |
-| <mark style="color:blue;">607</mark> | Fare not available                  |
-| <mark style="color:blue;">608</mark> | Duplicate booking                   |
-| <mark style="color:blue;">609</mark> | Contact email is blocked by airline |
+| Code                                 | Description                     |
+| ------------------------------------ | ------------------------------- |
+| <mark style="color:blue;">601</mark> | Price changes                   |
+| <mark style="color:blue;">602</mark> | Flight not found                |
+| <mark style="color:blue;">603</mark> | Position is full                |
+| <mark style="color:blue;">604</mark> | Pay for failure                 |
+| <mark style="color:blue;">605</mark> | Wrong passenger information     |
+| <mark style="color:blue;">606</mark> | Inconsistent flight information |
+| <mark style="color:blue;">607</mark> | FareFamily is sold out          |
 
 
 
