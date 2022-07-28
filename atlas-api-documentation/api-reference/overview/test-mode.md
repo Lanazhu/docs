@@ -16,5 +16,20 @@ When you search for flights in the test mode, you'll see offers from Atlas Sandb
 
 The airlines' fares in Sandbox are not as comprehensive and up-to-date as the Production environment. Atlas will not create real bookings or issue real tickets with the airline during the testing process.
 
+### Mock data <a href="#overview" id="overview"></a>
+
+If you want to test the order cancel status, please use these dedicated passenger name in the order request.
+
+| Ticket Error Code | Passenger Name  |   |
+| ----------------- | --------------- | - |
+| 601               | ERROR/PRICE     |   |
+| 604               | ERROR/CARD      |   |
+| 605               | ERROR/DOCUMENT  |   |
+| 606               | ERROR/FLIGHT    |   |
+| 608               | ERROR/DUPLICATE |   |
+| 609               | ERROR/MAILBOX   |   |
+
+
+
 
 
