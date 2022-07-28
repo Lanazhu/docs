@@ -4,7 +4,7 @@
 
 Webhooks are used to automatically receive notifications of events that happen.&#x20;
 
-Once an event of "<mark style="color:green;">order.cancel</mark>" is received on the server, it can be processed and action taken as required.
+Once an event of "<mark style="color:green;">order.cancelled</mark>" is received on the server, it can be processed and action taken as required.
 
 Sometimes the airline might decline the pass through credit card and fail the booking, in this case, Atlas will give you a notification about it and cancel this order as well.
 
@@ -39,7 +39,7 @@ Method : Post
 ```json
 {
     "cid": "pxmhg93103",
-    "type": "order.cancel",
+    "type": "order.cancelled",
     "data": {
       "orderNo": "BCNQL20201031184148568",
       "orderStatus": -3, 
