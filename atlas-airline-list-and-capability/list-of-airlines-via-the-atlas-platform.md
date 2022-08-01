@@ -8,156 +8,163 @@ The Atlas platform enables booking of over 100+ LCC airlines currently. We are w
 We are adding more airlines each month, if there are any you particularly require, please let us know by contacting the Atlas Business Development contact and they will update you.
 {% endhint %}
 
-**Total Number of Airlines：145**
+**Total Number of Airlines：152**
 
-Last updated: 1st July, 2022 (The list will be updated every month by Atlas.)
+Last updated: 1st August, 2022 (The list will be updated every month by Atlas.)
 
 
 
 | Airline                             | IATA Code | Country                                                       |
 | ----------------------------------- | --------- | ------------------------------------------------------------- |
-| Azul Conecta                        | 2F        | BR-Brazil                                                     |
-| TruJet                              | 2T        | IN-India                                                      |
-| Jetstar Asia                        | 3K        | SG-Singapore                                                  |
-| Smartavia                           | 5N        | RU-Russian Federation (the)                                   |
-| Solaseed Air                        | 6J        | JP-Japan                                                      |
-| Star Flyer                          | 7G        | JP-Japan                                                      |
-| Aegean Airlines                     | A3        | GR-Greece                                                     |
-| Azul Airlines                       | AD        | BR-Brazil                                                     |
-| Blue Bird Airways                   | BZ        | GR-Greece                                                     |
-| Severstal                           | D2        | RU-Russian Federation (the)                                   |
-| Aerlingus                           | EI        | IE-Ireland                                                    |
-| Gol                                 | G3        | BR-Brazil                                                     |
-| Jetstar Japan                       | GK        | JP-Japan                                                      |
-| Aurigny                             | GR        | GG-Guernsey                                                   |
-| Sky Airline                         | H2        | CL-Chile                                                      |
-| Sky Airlines Perú                   | H8        | PE-Peru                                                       |
-| Air Do                              | HD        | JP-Japan                                                      |
-| Amapola                             | HP        | SE-Sweden                                                     |
-| Izhavia                             | I8        | RU-Russian Federation (the)                                   |
-| Nam Air                             | IN        | ID-Indonesia                                                  |
-| JetSMART Chile                      | JA        | CL-Chile                                                      |
-| Fuji Dream Airlines                 | JH        | JP-Japan                                                      |
-| Jetstar Airways                     | JQ        | AU-Australia                                                  |
-| Peach Aviation                      | MM        | JP-Japan                                                      |
-| Nordwind Airlines                   | N4        | RU-Russian Federation (the)                                   |
-| Spirit Airlines                     | NK        | US-United States of America (the)                             |
-| Binter                              | NT        | ES-Spain                                                      |
-| Kam Air                             | RQ        | AF-Afghanistan                                                |
-| Star Air                            | S5        | IN-India                                                      |
-| Sriwijaya Air                       | SJ        | ID-Indonesia                                                  |
-| Eastern Airways                     | T3        | GB-United Kingdom of Great Britain and Northern Ireland (the) |
-| Braathens Regional Airways          | TF        | SE-Sweden                                                     |
-| Vivaaerobus                         | VB        | MX-Mexico                                                     |
-| EasyFly                             | VE        | CO-Colombia                                                   |
-| Vueling Airlines                    | VY        | ES-Spain                                                      |
-| Wideroe                             | WF        | NO-Norway                                                     |
-| JetSmart Argentina                  | WJ        | AR-Argentina                                                  |
-| Corendonairlines                    | XC        | TR-Turkey                                                     |
-| Corendon Airlines Europe            | XR        | MT-Malta                                                      |
-| Blueair                             | 0B        | RO-Romania                                                    |
-| Albawings                           | 2B        | AL-Albania                                                    |
-| Helvetic Airways                    | 2L        | CH-Switzerland                                                |
-| Air Choice One                      | 3E        | US-United States of America (the)                             |
-| FLYONE Armenia                      | 3F        | AM-Armenia                                                    |
-| Arabia Abu Dhabi                    | 3L        | AE-United Arab Emirates (the)                                 |
-| Arabia Maroc                        | 3O        | MA-Morocco                                                    |
-| HiSky                               | 4H        | KR-Korea (the Republic of)                                    |
-| Eurowings Discover                  | 4Y        | DE-Germany                                                    |
-| FlyOne                              | 5F        | MD-Moldova (the Republic of)                                  |
-| Cebu Pacific Air                    | 5J        | PH-Philippines (the)                                          |
-| Wizz Air Abu Dhabi                  | 5W        | AE-United Arab Emirates (the)                                 |
-| IndiGo                              | 6E        | IN-India                                                      |
-| Hokkaido Air System                 | 6L        | JP-Japan                                                      |
-| Jeju Air                            | 7C        | KR-Korea (the Republic of)                                    |
-| Pacific Coastal                     | 8P        | CA-Canada                                                     |
-| Satena                              | 9R        | CO-Colombia                                                   |
-| AnimaWings                          | A2        | RO-Romania                                                    |
-| AirAsia Malaysia                    | AK        | MY-Malaysia                                                   |
-| Malta Air                           | AL        | MT-Malta                                                      |
 | Advanced Airlines                   | AN        | US-United States of America (the)                             |
-| Alba Star                           | AP        | ES-Spain                                                      |
-| Skymark Airlines                    | BC        | JP-Japan                                                      |
-| US-Bangla Airlines                  | BS        | BD-Bangladesh                                                 |
-| Tui Airways                         | BY        | GB-United Kingdom of Great Britain and Northern Ireland (the) |
-| Corendon Dutch Airlines             | CD        | NL-Netherlands (the)                                          |
-| AirAsia X                           | D7        | MY-Malaysia                                                   |
-| Norwegian Air International         | D8        | IE-Ireland                                                    |
-| Condor                              | DE        | DE-Germany                                                    |
-| Cebgo                               | DG        | PH-Philippines (the)                                          |
-| Norwegian Air Norway AS             | DH        | NO-Norway                                                     |
-| easyJet Switzerland                 | DS        | CH-Switzerland                                                |
-| Air Liaison                         | DU        | CA-Canada                                                     |
-| DAT (formerly Danish Air Transport) | DX        | DK-Denmark                                                    |
-| Norwegian Air Shuttle ASA           | DY        | NO-Norway                                                     |
-| Enter Air                           | E4        | PL-Poland                                                     |
-| Arabia Egypt                        | E5        | EG-Egypt                                                      |
-| easyJet Europe                      | EC        | AT-Austria                                                    |
+| Aegean Air                          | A3        | GR-Greece                                                     |
+| Aer Lingus                          | EI        | IE-Ireland                                                    |
 | Aer Lingus UK                       | EG        | IE-Ireland                                                    |
-| Eurowings                           | EW        | DE-Germany                                                    |
-| Flyadeal                            | F3        | SA-Saudi Arabia                                               |
-| Flair Airlines                      | F8        | CA-Canada                                                     |
-| Frontier Airlines                   | F9        | US-United States of America (the)                             |
-| FlySafair                           | FA        | ZA-South Africa                                               |
-| AirAsia Thai                        | FD        | TH-Thailand                                                   |
-| Flybondi                            | FO        | AR-Argentina                                                  |
-| Ryanair                             | FR        | IE-Ireland                                                    |
-| FlyEgypt                            | FT        | EG-Egypt                                                      |
-| Firefly                             | FY        | MY-Malaysia                                                   |
-| Flydubai                            | FZ        | AE-United Arab Emirates (the)                                 |
-| Allegiantair                        | G4        | US-United States of America (the)                             |
-| Go First                            | G8        | IN-India                                                      |
-| Air ArabiaAir                       | G9        | AE-United Arab Emirates (the)                                 |
-| CH.air                              | GM        | CH-Switzerland                                                |
-| Transavia                           | HV        | NL-Netherlands  (the)                                         |
-| AirAsia India                       | I5        | IN-India                                                      |
+| Air Arabia Abu Dhabi                | 3L        | AE-United Arab Emirates (the)                                 |
+| Air Arabia Egypt                    | E5        | US-United States of America (the)                             |
+| Air Arabia Maroc                    | 3O        | JP-Japan                                                      |
+| Air ArabiaAir                       | G9        | IN-India                                                      |
+| Air Choice One                      | 3E        | CA-Canada                                                     |
+| Air Do                              | HD        | MT-Malta                                                      |
+| Air India Express                   | IX        | KR-Korea (the Republic of)                                    |
+| Air Liaison                         | DU        | IN-India                                                      |
+| Air Malta                           | KM        | ID-Indonesia                                                  |
+| Air Seoul                           | RS        | MY-Malaysia                                                   |
+| AirAsia India                       | I5        | PH-Philippines (the)                                          |
+| AirAsia Indonesia                   | QZ        | TH-Thailand                                                   |
+| AirAsia Malaysia                    | AK        | TH-Thailand                                                   |
+| AirAsia Philippines                 | Z2        | MY-Malaysia                                                   |
+| AirAsia Thai                        | FD        | ES-Spain                                                      |
+| AirAsia Thai X                      | XJ        | AL-Albania                                                    |
+| AirAsia X                           | D7        | US-United States of America (the)                             |
+| AlbaStar                            | AP        | SE-Sweden                                                     |
+| Albawings                           | 2B        | RO-Romania                                                    |
+| Allegiantair                        | G4        | AE-United Arab Emirates (the)                                 |
+| Amapola                             | HP        | EG-Egypt                                                      |
+| AnimaWings                          | A2        | MA-Morocco                                                    |
+| Aurigny                             | GR        | GG-Guernsey                                                   |
+| Avelo Airlines                      | XP        | US-United States of America (the)                             |
+| Azul Airlines                       | AD        | BR-Brazil                                                     |
+| Azul Conecta                        | 2F        | BR-Brazil                                                     |
+| Bamboo Airways                      | QH        | VN-Viet Nam                                                   |
 | Batik Air                           | ID        | ID-Indonesia                                                  |
-| Super Air Jet - JT API              | IU        | ID-Indonesia                                                  |
-| Wings Air                           | IW        | ID-Indonesia                                                  |
-| Air India Express                   | IX        | IN-India                                                      |
-| Jazeera Airways                     | J9        | KW-Kuwait                                                     |
+| BinterCanarias                      | NT        | ES-Spain                                                      |
+| Blue Bird Airways                   | BZ        | GR-Greece                                                     |
+| Blueair                             | 0B        | RO-Romania                                                    |
+| Braathens                           | TF        | SE-Sweden                                                     |
+| Buzz (Ryanair)                      | RR        | PL-Poland                                                     |
+| Cebgo                               | DG        | PH-Philippines (the)                                          |
+| Cebu Pacific Air                    | 5J        | PH-Philippines (the)                                          |
+| Central Mountain Air                | 9M        | CA-Canada                                                     |
+| Chair                               | GM        | CH-Switzerland                                                |
+| Citilink                            | QG        | ID-Indonesia                                                  |
+| condor                              | DE        | DE-Germany                                                    |
+| Corendon Airlines Europe            | XR        | MT-Malta                                                      |
+| Corendon Dutch Airlines             | CD        | NL-Netherlands (the)                                          |
+| Corendonairlines                    | XC        | TR-Turkey                                                     |
+| DAT (formerly Danish Air Transport) | DX        | DK-Denmark                                                    |
+| Eastern Airways                     | T3        | GB-United Kingdom of Great Britain and Northern Ireland (the) |
+| EasyFly                             | VE        | CO-Colombia                                                   |
+| easyJet Airline Company Limited     | U2        | AT-Austria                                                    |
+| easyJet Europe                      | EC        | CH-Switzerland                                                |
+| easyJet Switzerland                 | DS        | GB-United Kingdom of Great Britain and Northern Ireland (the) |
+| Edelweiss Air                       | WK        | CH-Switzerland                                                |
+| Enter Air                           | E4        | PL-Poland                                                     |
+| Eurowings                           | EW        | DE-Germany                                                    |
+| Eurowings Discover                  | 4Y        | DE-Germany                                                    |
+| Firefly                             | FY        | MY-Malaysia                                                   |
+| Flair Airlines                      | F8        | CA-Canada                                                     |
+| flyadeal                            | F3        | SA-Saudi Arabia                                               |
+| Flybondi                            | FO        | AR-Argentina                                                  |
+| FlyDubai                            | FZ        | AE-United Arab Emirates (the)                                 |
+| FlyEgypt                            | FT        | EG-Egypt                                                      |
+| flynas                              | XY        | SA-Saudi  Arabia                                              |
+| FlyOne                              | 5F        | MD-Moldova (the Republic of)                                  |
+| FlyOne Armenia                      | 3F        | AM-Armenia                                                    |
+| FlySafair                           | FA        | ZA-South Africa                                               |
+| Frontier Airlines                   | F9        | US-United States of America (the)                             |
+| Fuji Dreams                         | JH        | JP-Japan                                                      |
+| GoFirst                             | G8        | IN-India                                                      |
+| Gol Airlines                        | G3        | BR-Brazil                                                     |
+| Helvetic Airways                    | 2L        | CH-Switzerland                                                |
+| HiSKY                               | 4H        | KR-Korea (the Republic of)                                    |
+| Hokkaido Air System                 | 6L        | JP-Japan                                                      |
+| IndiGo                              | 6E        | IN-India                                                      |
+| Izhavia                             | I8        | RU-Russian Federation (the)                                   |
 | Japan Air Commuter                  | JC        | JP-Japan                                                      |
 | Japan Airlines                      | JL        | JP-Japan                                                      |
-| Lion Airlines                       | JT        | ID-Indonesia                                                  |
-| Perimeter Aviation                  | JV        | CA-Canada                                                     |
-| Norwegian Air Sweden                | LE        | SE-Sweden                                                     |
-| Luxair                              | LG        | LU-Luxembourg                                                 |
+| Japan Transocean Airlines           | NU        | JP-Japan                                                      |
+| Jazeera Airways                     | J9        | KW-Kuwait                                                     |
+| Jeju Air                            | 7C        | KR-Korea (the Republic of)                                    |
+| Jetair Caribbean                    | 4J        | CW-Curaçao                                                    |
+| JetSMART Argentina                  | WJ        | AR-Argentina                                                  |
+| JetSMART Chile                      | JA        | CL-Chile                                                      |
+| Jetstar Airways                     | JQ        | AU-Australia                                                  |
+| Jetstar Asia                        | 3K        | SG-Singapore                                                  |
+| Jetstar Japan                       | GK        | JP-Japan                                                      |
 | Jin Air                             | LJ        | KR-Korea (the Republic of)                                    |
-| Loganair                            | LM        | GB-United Kingdom of Great Britain and Northern Ireland (the) |
+| Kam Air                             | RQ        | AF-Afghanistan                                                |
 | Lauda Europe                        | LW        | MT-Malta                                                      |
-| Volaris El Salvador                 | N3        | SV-El Salvador                                                |
-| Neos Air                            | NO        | IT-Italy                                                      |
-| Japan Transocean Air                | NU        | JP-Japan                                                      |
+| Lion Airlines                       | JT        | ID-Indonesia                                                  |
+| Loganair                            | LM        | GB-United Kingdom of Great Britain and Northern Ireland (the) |
+| Luxair                              | LG        | LU-Luxembourg                                                 |
 | Malindo Air                         | OD        | MY-Malaysia                                                   |
-| Salam Air                           | OV        | OM-Oman                                                       |
+| Malta Air                           | AL        | MT-Malta                                                      |
+| Nam Air                             | IN        | ID-Indonesia                                                  |
+| Neos Air                            | NO        | IT-Italy                                                      |
+| Nordwind Airlines                   | N4        | RU-Russian Federation (the)                                   |
+| Norwegian Air International         | D8        | IE-Ireland                                                    |
+| Norwegian Air Norway AS             | DH        | NO-Norway                                                     |
+| Norwegian Air Shuttle ASA           | DY        | NO-Norway                                                     |
+| Norwegian Air Sweden                | LE        | SE-Sweden                                                     |
+| Novo Air                            | VQ        | BD-Bangladesh                                                 |
+| Pacific Coastal                     | 8P        | CA-Canada                                                     |
 | PAL Airlines                        | PB        | CA-Canada                                                     |
-| Pegasus Airlines                    | PC        | TR-Turkey                                                     |
-| Volaris Costa Rica                  | Q6        | CR-Costa Rica                                                 |
-| Citilink                            | QG        | ID-Indonesia                                                  |
-| Bamboo Airways                      | QH        | VN-Viet Nam                                                   |
-| AirAsia Indonesia                   | QZ        | ID-Indonesia                                                  |
+| Peach Aviation                      | MM        | JP-Japan                                                      |
+| Pegasus                             | PC        | TR-Turkey                                                     |
+| Perimeter Aviation                  | JV        | CA-Canada                                                     |
+| Ryanair Ltd                         | FR        | IE-Ireland                                                    |
 | Ryanair UK                          | RK        | GB-United Kingdom of Great Britain and Northern Ireland (the) |
-| Buzz (Ryanair)                      | RR        | PL-Poland                                                     |
-| Air Seoul                           | RS        | KR-Korea (the Republic of)                                    |
-| SpiceJet                            | SG        | IN-India                                                      |
-| Thai Lion Air                       | SL        | TH-Thailand                                                   |
-| Sun Country Airlines                | SY        | US-United States of America (the)                             |
-| TUI Fly Belgium                     | TB        | BE-Belgium                                                    |
-| Transavia France                    | TO        | FR-France                                                     |
+| Salam Air                           | OV        | OM-Oman                                                       |
+| Satena Airlines                     | 9R        | CO-Colombia                                                   |
 | Scoot Tigerair                      | TR        | SG-Singapore                                                  |
-| T'way Air                           | TW        | KR-Korea (the Republic of)                                    |
-| easyJet UK Limited                  | U2        | GB-United Kingdom of Great Britain and Northern Ireland (the) |
-| Volotea                             | V7        | ES-Spain                                                      |
-| Vietjet Air                         | VJ        | VN-Viet Nam                                                   |
-| NOVO AIR                            | VQ        | BD-Bangladesh                                                 |
-| Thai Vietjet Air                    | VZ        | TH-Thailand                                                   |
-| Wizz Air                            | W6        | HU-Hungary                                                    |
-| Wizz Air UK                         | W9        | GB-United Kingdom of Great Britain and Northern Ireland (the) |
+| Severstal                           | D2        | RU-Russian Federation (the)                                   |
+| Sky Airlines                        | H2        | CL-Chile                                                      |
+| Sky Airlines Peru                   | H8        | PE-Peru                                                       |
+| Skyexpress Airlines                 | GQ        | GR-Greece                                                     |
+| Skymark Airlines                    | BC        | JP-Japan                                                      |
+| Smartavia                           | 5N        | RU-Russian Federation (the)                                   |
+| Solaseed Air                        | 6J        | JP-Japan                                                      |
+| SpiceJet                            | SG        | IN-India                                                      |
+| Spirit Airlines                     | NK        | US-United States of America (the)                             |
+| Sriwijaya Air                       | SJ        | ID-Indonesia                                                  |
+| Star Air                            | S5        | IN-India                                                      |
+| Star Flyer                          | 7G        | JP-Japan                                                      |
+| Sun Country Airlines                | SY        | US-United States of America (the)                             |
+| sunexpress                          | XQ        | TR-Turkey                                                     |
 | Sunwing Airlines                    | WG        | CA-Canada                                                     |
-| TUI fly Deutschland                 | X3        | DE-Germany                                                    |
-| AirAsia Thai X                      | XJ        | TH-Thailand                                                   |
-| Avelo                               | XP        | US-United States of America (the)                             |
-| Sunexpress                          | XQ        | TR-Turkey                                                     |
-| Flynas                              | XY        | SA-Saudi Arabia                                               |
-| Volaris                             | Y4        | MX-Mexico                                                     |
-| AirAsia Philippines                 | Z2        | PH-Philippines (the)                                          |
+| Super Air Jet                       | IU        | ID-Indonesia                                                  |
+| TAR Aerolíneas                      | YQ        | MX-Mexico                                                     |
+| Thai Lion Air                       | SL        | TH-Thailand                                                   |
+| Thai Vietjet Air                    | VZ        | TH-Thailand                                                   |
+| Transavia Airlines                  | HV        | NL-Netherlands  (the)                                         |
+| Transavia France                    | TO        | FR-France                                                     |
+| Trujet                              | 2T        | IN-India                                                      |
+| TUI Airways                         | BY        | GB-United Kingdom of Great Britain and Northern Ireland (the) |
+| TUI fly Belgium                     | TB        | BE-Belgium                                                    |
+| TUI fly Germany                     | X3        | DE-Germany                                                    |
+| T'way Air                           | TW        | KR-Korea (the Republic of)                                    |
+| US-Bangla Airlines                  | BS        | BD-Bangladesh                                                 |
+| Vietjet Air                         | VJ        | VN-Viet Nam                                                   |
+| vivaaerobus                         | VB        | MX-Mexico                                                     |
+| Voepass Linhas Aéreas               | 2Z        | BR-Brazil                                                     |
+| volaris                             | Y4        | MX-Mexico                                                     |
+| Volaris Costa Rica                  | Q6        | CR-Costa Rica                                                 |
+| Volaris El Salvador                 | N3        | SV-El Salvador                                                |
+| Volotea                             | V7        | ES-Spain                                                      |
+| Vueling Airlines                    | VY        | ES-Spain                                                      |
+| Wideroe                             | WF        | NO-Norway                                                     |
+| Wings Air                           | IW        | ID-Indonesia                                                  |
+| Wizz Air                            | W6        | HU-Hungary                                                    |
+| Wizz Air Abu Dhabi                  | 5W        | AE-United Arab Emirates (the)                                 |
+| Wizz Air UK                         | W9        | GB-United Kingdom of Great Britain and Northern Ireland (the) |
