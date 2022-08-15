@@ -35,7 +35,6 @@
     * [Atlas Order API](atlas-api-documentation/faqs/atlas-order-api.md)
     * [Atlas API Post-ticketing](atlas-api-documentation/faqs/atlas-api-post-ticketing.md)
     * [Atlas API Payments](atlas-api-documentation/faqs/atlas-api-payments.md)
-  * [API Integration For Search Only](atlas-api-documentation/api-integration-for-search-only.md)
   * [Change Logs](atlas-api-documentation/change-logs.md)
 * [Atlas Fare Comparison Solution](atlas-fare-comparison-solution/README.md)
   * [Flights and Fare Search Tool](atlas-fare-comparison-solution/flights-and-fare-search-tool.md)

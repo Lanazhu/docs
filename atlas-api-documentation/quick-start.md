@@ -48,8 +48,8 @@ Here's how the function works:&#x20;
 [search.md](api-reference/shopping-and-ticketing/search.md)
 {% endcontent-ref %}
 
-{% content-ref url="api-integration-for-search-only.md" %}
-[api-integration-for-search-only.md](api-integration-for-search-only.md)
+{% content-ref url="broken-reference" %}
+[Broken link](broken-reference)
 {% endcontent-ref %}
 
 Please record `routingIdentifier` for each routing offer.
