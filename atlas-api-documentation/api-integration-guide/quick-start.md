@@ -23,7 +23,7 @@ Your API requests are authenticated using API keys. Any request that doesn't inc
 Please add them in the header of each <mark style="color:blue;">post</mark> request.
 
 {% hint style="success" %}
-**Tip:** We've put together a Postman Collection that contains all of the requests you'll need to follow along with this guide, please download it here.
+**Tip:** We've put together a Postman Collection that contains all of the requests you'll need to follow along with this guide, please download it [here](uat-submission-guide.md).
 {% endhint %}
 
 ## Make your first request
