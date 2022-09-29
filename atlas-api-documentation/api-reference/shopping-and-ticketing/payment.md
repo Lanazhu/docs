@@ -48,16 +48,16 @@ Order function should be called in prior to this call.
       *   #### cardHolderFirstName               <mark style="color:blue;">string</mark>                                                               <mark style="color:green;">Required</mark>
 
           First name of the card holder
-      *   #### cardHolderCountry                    <mark style="color:blue;">string</mark>                                                               <mark style="color:orange;">Optional</mark>
+      *   #### cardHolderCountry                    <mark style="color:blue;">string</mark>                                                               <mark style="color:green;">Required</mark>
 
           The country code of card holder
-      *   #### cardHolderCity                             <mark style="color:blue;">string</mark>                                                               <mark style="color:orange;">Optional</mark>
+      *   #### cardHolderCity                             <mark style="color:blue;">string</mark>                                                               <mark style="color:green;">Required</mark>
 
           The city name of card holder
-      *   #### cardHolderPostCode                 <mark style="color:blue;">string</mark>                                                              <mark style="color:orange;">Optional</mark>
+      *   #### cardHolderPostCode                 <mark style="color:blue;">string</mark>                                                              <mark style="color:green;">Required</mark>
 
           The post code of card holder
-      *   #### cardHolderAddress                     <mark style="color:blue;">string</mark>                                                             <mark style="color:orange;">Optional</mark>
+      *   #### cardHolderAddress                     <mark style="color:blue;">string</mark>                                                             <mark style="color:green;">Required</mark>
 
           The address of card holder
 {% endtab %}
