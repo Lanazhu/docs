@@ -31,10 +31,10 @@ No preceding function needs to be carried out.
     Reserved, currently not support infant purchase
 *   #### fromCity      <mark style="color:blue;">string</mark>                                                                                                                 <mark style="color:green;">Required</mark>
 
-    IATA Code of departure city
+    IATA City/Airport Code of departure city
 *   #### toCity            <mark style="color:blue;">string</mark>                                                                                                                 <mark style="color:green;">Required</mark>
 
-    IATA Code of arrival city
+    IATA City/Airport Code of arrival city
 *   #### fromDate     <mark style="color:blue;">string</mark>                                                                                                                 <mark style="color:green;">Required</mark>
 
     Departure date, the format is YYYYMMDD
