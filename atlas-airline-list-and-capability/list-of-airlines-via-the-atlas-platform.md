@@ -8,9 +8,9 @@ The Atlas platform enables booking of over 100+ LCC airlines currently. We are w
 We are adding more airlines each month, if there are any you particularly require, please let us know by contacting the Atlas Business Development contact and they will update you.
 {% endhint %}
 
-**Total Number of Airlines：160**
+**Total Number of Airlines：167**
 
-Last updated: 6th September, 2022 (The list will be updated every month by Atlas.)
+Last updated: 3rd October, 2022 (The list will be updated every month by Atlas.)
 
 
 
@@ -54,6 +54,7 @@ Last updated: 6th September, 2022 (The list will be updated every month by Atlas
 | Blueair                             | 0B        | EMEA     | RO-Romania                                                    |
 | Braathens                           | TF        | EMEA     | SE-Sweden                                                     |
 | Buzz (Ryanair)                      | RR        | EMEA     | PL-Poland                                                     |
+| Calafia Airlines                    | A7        | AMERICAS | MX-Mexico                                                     |
 | Calm Air                            | MO        | AMERICAS | CA-Canada                                                     |
 | Cebgo                               | DG        | APAC     | PH-Philippines (the)                                          |
 | Cebu Pacific Air                    | 5J        | APAC     | PH-Philippines (the)                                          |
@@ -77,7 +78,8 @@ Last updated: 6th September, 2022 (The list will be updated every month by Atlas
 | Fastjet                             | FN        | EMEA     | ZW-Zimbabwe                                                   |
 | Firefly                             | FY        | APAC     | MY-Malaysia                                                   |
 | Flair Airlines                      | F8        | AMERICAS | CA-Canada                                                     |
-| flyadeal                            | F3        | EMEA     | SA-Saudi Arabia                                               |
+| Flyadeal                            | F3        | EMEA     | SA-Saudi Arabia                                               |
+| Flyasky                             | KP        | EMEA     | TG-Togo                                                       |
 | Flybondi                            | FO        | AMERICAS | AR-Argentina                                                  |
 | FlyDubai                            | FZ        | EMEA     | AE-United Arab Emirates (the)                                 |
 | FlyEgypt                            | FT        | EMEA     | EG-Egypt                                                      |
@@ -110,6 +112,7 @@ Last updated: 6th September, 2022 (The list will be updated every month by Atlas
 | Jin Air                             | LJ        | APAC     | KR-Korea (the Republic of)                                    |
 | Kam Air                             | RQ        | APAC     | AF-Afghanistan                                                |
 | Lauda Europe                        | LW        | EMEA     | MT-Malta                                                      |
+| Lift Airlines                       | GE        | EMEA     | ZA-South Africa                                               |
 | Lion Airlines                       | JT        | APAC     | ID-Indonesia                                                  |
 | Loganair                            | LM        | EMEA     | GB-United Kingdom of Great Britain and Northern Ireland (the) |
 | Luxair                              | LG        | EMEA     | LU-Luxembourg                                                 |
@@ -171,8 +174,12 @@ Last updated: 6th September, 2022 (The list will be updated every month by Atlas
 | Volaris El Salvador                 | N3        | AMERICAS | SV-El Salvador                                                |
 | Volotea                             | V7        | EMEA     | ES-Spain                                                      |
 | Vueling Airlines                    | VY        | EMEA     | ES-Spain                                                      |
+| WestJet                             | WS        | AMERICAS | CA-Canada                                                     |
+| WestJet Encore                      | WR        | AMERICAS | CA-Canada                                                     |
 | Wideroe                             | WF        | EMEA     | NO-Norway                                                     |
 | Wings Air                           | IW        | APAC     | ID-Indonesia                                                  |
 | Wizz Air                            | W6        | EMEA     | HU-Hungary                                                    |
 | Wizz Air Abu Dhabi                  | 5W        | EMEA     | AE-United Arab Emirates (the)                                 |
-| Wizz Air UK                         | W9        | EME      | GB-United Kingdom of Great Britain and Northern Ireland (the) |
+| Wizz Air UK                         | W9        | EMEA     | GB-United Kingdom of Great Britain and Northern Ireland (the) |
+| Yeti Airlines                       | YT        | APAC     | NP-Nepal                                                      |
+| Zipair                              | ZP        | APAC     | JP-Japan                                                      |
