@@ -92,7 +92,7 @@ Verify function should be called in prior to this call.
     * #### <mark style="color:blue;">ContactElement</mark>
       *   #### name                                  <mark style="color:blue;">string</mark>                                                                                  <mark style="color:green;">Required</mark>
 
-          Contact name.
+          Contact name. Here is the format : LastName/FirstName MiddleName.
       *   #### address                             <mark style="color:blue;">string</mark>                                                                                  <mark style="color:green;">Required</mark>
 
           Contact address.
@@ -147,7 +147,7 @@ Verify function should be called in prior to this call.
         }
     ],
     "contact": {
-        "name": "Way",
+        "name": "Lee/Way",
         "address": null,
         "postcode": null,
         "email": "qyjhb2@163.com",
