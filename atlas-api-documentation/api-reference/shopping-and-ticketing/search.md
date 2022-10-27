@@ -25,10 +25,10 @@ No preceding function needs to be carried out.
     Adult passenger count, the number can be 1-9
 *   #### childNum      <mark style="color:blue;">int</mark>                                                                                                                       <mark style="color:green;">Required</mark>
 
-    Adult passenger count, the number can be 0-8
-*   #### infantNum    <mark style="color:blue;">int</mark>                                                                                                                       <mark style="color:orange;">Optional</mark>
+    Child passenger count, the number can be 0-8
+*   #### infantNum    <mark style="color:blue;">int</mark>                                                                                                                       <mark style="color:green;">Required</mark>
 
-    Reserved, currently not support infant purchase
+    Infan passenger count, no more than the number of adult
 *   #### fromCity      <mark style="color:blue;">string</mark>                                                                                                                 <mark style="color:green;">Required</mark>
 
     IATA City/Airport Code of departure city
