@@ -22,69 +22,73 @@ Verify function should be called in prior to this call.
 
     Passengers' information.
 
-    * #### <mark style="color:blue;">PassengerElement</mark>
-      *   #### name                             <mark style="color:blue;">string</mark>                                                                                  <mark style="color:green;">Required</mark>
+    *   #### <mark style="color:blue;">PassengerElement</mark>
 
-          LastName/FirstName MiddleName.
-      *   #### passengerType         <mark style="color:blue;">int</mark>                                                                                        <mark style="color:green;">Required</mark>
+        *   #### name                             <mark style="color:blue;">string</mark>                                                                                  <mark style="color:green;">Required</mark>
 
-          0   ADT
+            LastName/FirstName MiddleName.
+        *   #### passengerType         <mark style="color:blue;">int</mark>                                                                                        <mark style="color:green;">Required</mark>
 
-          1   CHD
-      *   #### birthday                       <mark style="color:blue;">string</mark>                                                                                  <mark style="color:green;">Required</mark>
+            0   ADT
 
-          Birthday, Format: YYYYMMDD
-      *   #### gender                          <mark style="color:blue;">string</mark>                                                                                  <mark style="color:green;">Required</mark>
+            1   CHD
 
-          M : Male
+        &#x20;     2   INF
 
-          F  : Female
-      *   #### gender                          <mark style="color:blue;">string</mark>                                                                                  <mark style="color:green;">Required</mark>
+        *   #### birthday                       <mark style="color:blue;">string</mark>                                                                                  <mark style="color:green;">Required</mark>
 
-          M : Male
+            Birthday, Format: YYYYMMDD
+        *   #### gender                          <mark style="color:blue;">string</mark>                                                                                  <mark style="color:green;">Required</mark>
 
-          F  : Female
-      *   #### cardNum                      <mark style="color:blue;">string</mark>                                                                                  <mark style="color:green;">Required</mark>
+            M : Male
 
-          Passenger id card number
-      *   #### cardType                      <mark style="color:blue;">string</mark>                                                                                  <mark style="color:green;">Required</mark>
+            F  : Female
+        *   #### gender                          <mark style="color:blue;">string</mark>                                                                                  <mark style="color:green;">Required</mark>
 
-          Passenger id card type：
+            M : Male
 
-          PP - Passport
+            F  : Female
+        *   #### cardNum                      <mark style="color:blue;">string</mark>                                                                                  <mark style="color:green;">Required</mark>
 
-          GA - Hong Kong Macau Pass for China mainland citizens
+            Passenger id card number
+        *   #### cardType                      <mark style="color:blue;">string</mark>                                                                                  <mark style="color:green;">Required</mark>
 
-          TW - Taiwan Pass for China mainland citizens
+            Passenger id card type：
 
-          TB - China mainland pass for Taiwanese
+            PP - Passport
 
-          HY - International Seaman's Certificate
-      *   #### cardIssuePlace           <mark style="color:blue;">string</mark>                                                                                  <mark style="color:green;">Required</mark>
+            GA - Hong Kong Macau Pass for China mainland citizens
 
-          Card issue country，IATA code of country
-      *   #### cardExpired                  <mark style="color:blue;">string</mark>                                                                                  <mark style="color:green;">Required</mark>
+            TW - Taiwan Pass for China mainland citizens
 
-          Card expire date，Format：YYYYMMDD
-      *   #### nationality                     <mark style="color:blue;">string</mark>                                                                                   <mark style="color:green;">Required</mark>
+            TB - China mainland pass for Taiwanese
 
-          Nationality，IATA code of country
-      *   #### ancillaries                       Array<<mark style="color:blue;">AncillaryElement</mark>>                                         <mark style="color:blue;"></mark>                                         <mark style="color:green;">Required</mark>
+            HY - International Seaman's Certificate
+        *   #### cardIssuePlace           <mark style="color:blue;">string</mark>                                                                                  <mark style="color:green;">Required</mark>
 
-          Ancillaries selection for the specific passenger
+            Card issue country，IATA code of country
+        *   #### cardExpired                  <mark style="color:blue;">string</mark>                                                                                  <mark style="color:green;">Required</mark>
 
-          * #### <mark style="color:blue;">AncillaryElement</mark>
-            *   #### productCode                             <mark style="color:blue;">string</mark>                                                       <mark style="color:green;">Required</mark>
+            Card expire date，Format：YYYYMMDD
+        *   #### nationality                     <mark style="color:blue;">string</mark>                                                                                   <mark style="color:green;">Required</mark>
 
-                Ancillary product code;
+            Nationality，IATA code of country
+        *   #### ancillaries                       Array<<mark style="color:blue;">AncillaryElement</mark>>                                         <mark style="color:blue;"></mark>                                         <mark style="color:green;">Required</mark>
 
-                Got from routing element in the search/revalidation response.
-            *   #### segmentIndex                           <mark style="color:blue;">int</mark>                                                              <mark style="color:green;">Required</mark>
+            Ancillaries selection for the specific passenger
 
-                Segment sequence
-            *   #### offerId                                           <mark style="color:blue;">string</mark>                                                       <mark style="color:green;">Required</mark>
+            * #### <mark style="color:blue;">AncillaryElement</mark>
+              *   #### productCode                             <mark style="color:blue;">string</mark>                                                       <mark style="color:green;">Required</mark>
 
-                unique identifier for this ancillary's offer.
+                  Ancillary product code;
+
+                  Got from routing element in the search/revalidation response.
+              *   #### segmentIndex                           <mark style="color:blue;">int</mark>                                                              <mark style="color:green;">Required</mark>
+
+                  Segment sequence
+              *   #### offerId                                           <mark style="color:blue;">string</mark>                                                       <mark style="color:green;">Required</mark>
+
+                  unique identifier for this ancillary's offer.
 *   #### contact                        Object<<mark style="color:blue;">ContactElement</mark>>                                                             <mark style="color:blue;"></mark>                                                             <mark style="color:green;">Required</mark>
 
     Passengers' information.
@@ -201,70 +205,74 @@ Verify function should be called in prior to this call.
 
     Ticket information for passengers
 
-    * #### [PAXTicketInfo](order.md#paxticketinfo-schema)
-      *   #### name                             <mark style="color:blue;">string</mark>                                                                                 &#x20;
+    *   #### [PAXTicketInfo](order.md#paxticketinfo-schema)
 
-          LastName/FirstName MiddleName.
-      *   #### passengerType         <mark style="color:blue;">int</mark>                                                                                        <mark style="color:green;"></mark>        &#x20;
+        *   #### name                             <mark style="color:blue;">string</mark>                                                                                 &#x20;
 
-          0   ADT
+            LastName/FirstName MiddleName.
+        *   #### passengerType         <mark style="color:blue;">int</mark>                                                                                        <mark style="color:green;"></mark>        &#x20;
 
-          1   CHD
-      *   #### birthday                       <mark style="color:blue;">string</mark>                                                                                &#x20;
+            0   ADT
 
-          Birthday, Format: YYYYMMDD
-      *   #### gender                          <mark style="color:blue;">string</mark>                                                                                &#x20;
+            1   CHD
 
-          M : Male
+        &#x20;     2   INF
 
-          F  : Female
-      *   #### cardNum                      <mark style="color:blue;">string</mark>                                                                                 &#x20;
+        *   #### birthday                       <mark style="color:blue;">string</mark>                                                                                &#x20;
 
-          Passenger id card number
-      *   #### cardType                      <mark style="color:blue;">string</mark>                                                                                 &#x20;
+            Birthday, Format: YYYYMMDD
+        *   #### gender                          <mark style="color:blue;">string</mark>                                                                                &#x20;
 
-          Passenger id card type：
+            M : Male
 
-          PP - Passport
+            F  : Female
+        *   #### cardNum                      <mark style="color:blue;">string</mark>                                                                                 &#x20;
 
-          GA - Hong Kong Macau Pass for China mainland citizens
+            Passenger id card number
+        *   #### cardType                      <mark style="color:blue;">string</mark>                                                                                 &#x20;
 
-          TW - Taiwan Pass for China mainland citizens
+            Passenger id card type：
 
-          TB - China mainland pass for Taiwanese
+            PP - Passport
 
-          HY - International Seaman's Certificate
-      *   #### cardIssuePlace           <mark style="color:blue;">string</mark>                                                                                &#x20;
+            GA - Hong Kong Macau Pass for China mainland citizens
 
-          Card issue country，IATA code of country
-      *   #### cardExpired                  <mark style="color:blue;">string</mark>                                                                                &#x20;
+            TW - Taiwan Pass for China mainland citizens
 
-          Card expire date，Format：YYYYMMDD
-      *   #### nationality                     <mark style="color:blue;">string</mark>                                                                                &#x20;
+            TB - China mainland pass for Taiwanese
 
-          Nationality，IATA code of country
-      *   #### ticketNos                       Array<<mark style="color:blue;">string</mark>>                                                                <mark style="color:blue;"></mark>                                                               &#x20;
+            HY - International Seaman's Certificate
+        *   #### cardIssuePlace           <mark style="color:blue;">string</mark>                                                                                &#x20;
 
-          Ticket numbers
-      *   #### airlinePNRs                   Array<<mark style="color:blue;">string</mark>>                                                                <mark style="color:blue;"></mark>                                                               &#x20;
+            Card issue country，IATA code of country
+        *   #### cardExpired                  <mark style="color:blue;">string</mark>                                                                                &#x20;
 
-          AirlinePNRs, the array count would be the same as ticketnos count
-      *   #### ancillaries                    Array<<mark style="color:blue;">AncillaryElement</mark>>                                                                <mark style="color:blue;"></mark>                                                               &#x20;
+            Card expire date，Format：YYYYMMDD
+        *   #### nationality                     <mark style="color:blue;">string</mark>                                                                                &#x20;
 
-          Ancillaries selection for the specific passenger
+            Nationality，IATA code of country
+        *   #### ticketNos                       Array<<mark style="color:blue;">string</mark>>                                                                <mark style="color:blue;"></mark>                                                               &#x20;
 
-          * ****[**AncillaryElement**](order.md#undefined)****
-            *   #### productCode                             <mark style="color:blue;">string</mark>                                                     &#x20;
+            Ticket numbers
+        *   #### airlinePNRs                   Array<<mark style="color:blue;">string</mark>>                                                                <mark style="color:blue;"></mark>                                                               &#x20;
 
-                Ancillary product code;
+            AirlinePNRs, the array count would be the same as ticketnos count
+        *   #### ancillaries                    Array<<mark style="color:blue;">AncillaryElement</mark>>                                                                <mark style="color:blue;"></mark>                                                               &#x20;
 
-                Got from routing element in the search/revalidation response.
-            *   #### segmentIndex                           <mark style="color:blue;">int</mark>                                                            &#x20;
+            Ancillaries selection for the specific passenger
 
-                Segment sequence
-            *   #### offerId                                           <mark style="color:blue;">string</mark>                                                      &#x20;
+            * ****[**AncillaryElement**](order.md#undefined)****
+              *   #### productCode                             <mark style="color:blue;">string</mark>                                                     &#x20;
 
-                unique identifier for this ancillary's offer.
+                  Ancillary product code;
+
+                  Got from routing element in the search/revalidation response.
+              *   #### segmentIndex                           <mark style="color:blue;">int</mark>                                                            &#x20;
+
+                  Segment sequence
+              *   #### offerId                                           <mark style="color:blue;">string</mark>                                                      &#x20;
+
+                  unique identifier for this ancillary's offer.
 *   #### routing                                     Object<[RouteElement](search.md#2.-route-element-schema)> <mark style="color:blue;"></mark>                                                   &#x20;
 
     Route and fare details. The structure is also Routing Elements, same as search response
