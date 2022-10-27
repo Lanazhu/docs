@@ -473,10 +473,10 @@ The search results will include a lot of items. Some hightlight points are as be
     Child tax per passenger.
 *   #### InfantPrice   <mark style="color:blue;">decimal</mark>
 
-    Reserved, currently not support infant purchase.
+    Infant fare per passenger.
 *   #### InfantTax      <mark style="color:blue;">decimal</mark>
 
-    Reserved, currently not support infant purchase.
+    Infant tax per passenger.
 *   #### transactionFeePerPax    <mark style="color:blue;">decimal</mark>
 
     Technical service fee per passenger.
