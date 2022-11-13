@@ -1,3 +1,9 @@
+---
+description: >-
+  This function is to help you regenerate the order by one single call with the
+  update-to-time fare after the original order is expired or cancelled.
+---
+
 # RegenerateOrder
 
 ## Dependency
@@ -34,6 +40,10 @@ Order function should be called in prior to this call.
 
 {% tabs %}
 {% tab title="Schema" %}
-* #### Please refer to the reponse schema of order
+* #### Please click [here](order.md#response) to refer to the reponse schema of order
+{% endtab %}
+
+{% tab title="Samples" %}
+Please click [here](order.md#response) to refer to the reponse schema of order
 {% endtab %}
 {% endtabs %}
