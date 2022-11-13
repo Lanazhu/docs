@@ -1,7 +1,7 @@
 ---
 description: >-
   This function is to help you regenerate the order by one single call with the
-  update-to-time fare after the original order is expired or cancelled.
+  latest fare after the original order has expired or has been cancelled.
 ---
 
 # RegenerateOrder
