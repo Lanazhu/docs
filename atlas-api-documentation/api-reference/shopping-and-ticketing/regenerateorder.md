@@ -23,7 +23,7 @@ Order function should be called in prior to this call.
     Identifier of client and user.
 *   #### originalOrderNo                       <mark style="color:blue;">string</mark>                                                                                 <mark style="color:green;">Required</mark>
 
-    Original order number which you would like to regenerate one.&#x20;
+    Original order number which you would like to regenerate.&#x20;
 {% endtab %}
 
 {% tab title="Samples" %}
@@ -40,7 +40,7 @@ Order function should be called in prior to this call.
 
 {% tabs %}
 {% tab title="Schema" %}
-* #### Please click [here](order.md#response) to refer to the reponse schema of order
+* #### Please click [here](order.md#response) to refer to the response schema of order
 {% endtab %}
 
 {% tab title="Samples" %}
