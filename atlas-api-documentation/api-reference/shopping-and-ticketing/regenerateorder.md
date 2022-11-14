@@ -7,7 +7,7 @@ description: >-
 # RegenerateOrder
 
 {% hint style="info" %}
-<mark style="color:red;">**An order can only be regenerated within 4 hours of the original order number.**</mark>
+<mark style="color:red;">**An order can only be regenerated within 24 hours of the original order number.**</mark>
 {% endhint %}
 
 ## Dependency
