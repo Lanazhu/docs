@@ -6,6 +6,10 @@ description: >-
 
 # RegenerateOrder
 
+{% hint style="info" %}
+<mark style="color:red;">**An order can only be regenerated within 4 hours of the original order number.**</mark>
+{% endhint %}
+
 ## Dependency
 
 Order function should be called in prior to this call.
