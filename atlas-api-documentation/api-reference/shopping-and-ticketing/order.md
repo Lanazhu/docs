@@ -154,8 +154,8 @@ Verify function should be called in prior to this call.
         "name": "Lee/Way",
         "address": null,
         "postcode": null,
-        "email": "qyjhb2@163.com",
-        "mobile": "13580579231"
+        "email": "xxxxxx@xxx.com",
+        "mobile": "0065-81234567"
     },
     "requestSource": ""
 }
